@@ -10,19 +10,15 @@ const SectionIntro = () => {
         className="relative min-h-screen"
         style={{ background: "#FFD43B" }}
       >
-         <img src={Intro} layout="fill"/>
-         <div className="test" style={{ top: "4%", left: "50%", transform: " translateX(-50%)" }}>
-         <img src={Introimage} width={1200} height={1200}/>
-         </div>
+        <div className="lg:absolute lg:inset-0">
+        <img src={Intro} className="h-56 w-full  sm:h-72 md:h-96 lg:w-full lg:h-full"/>
+        </div>
         <div
           className="absolute flex flex-col items-center w-11/12 mx-auto text-center md:w-full"
           style={{ top: "40%", left: "50%", transform: " translateX(-50%)" }}
         >
-          <p className="flex flex-col font-semibold text-5xl text-white ">
+          <p className="flex flex-col font-semibold text-5xl text-white md:space-x-6 H2 lg:H1 lg:flex-row">
             <span>Waste is money</span> <span> UPCYCLING is culture</span>
-          </p>
-          <p className="flex-row font-semibold text-white">
-            <span>Upcycling วิถีใหม่แห่งการลดขยะ เพิ่มมูลค่าและช่วยโลก </span>
           </p>
         </div>
         <div className="absolute flex-col text-center md:w-full" style={{ top: "90%"}}>
