@@ -147,7 +147,7 @@ const SectionMaterial = () => {
             }}
           >
             <div className="flex flex-col B2 text-blue-7">
-              {select_image.map((d) => {
+              {select_image2.map((d) => {
                 return (
                   <div>
                     <ReactCompareImage
