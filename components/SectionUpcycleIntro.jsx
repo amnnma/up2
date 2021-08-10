@@ -3,7 +3,7 @@ import circle2 from "../assets/images/bgt.svg";
 const SectionUpcycleIntro = () => {
   return (
     <div className="relative" id="wrapper">
-      <div className="relative min-h-screen" style={{ background: "#FFD43B" }}>
+      <div className="relative z-50 min-h-screen" style={{ background: "#FFD43B" }}>
         <div
           className="absolute flex flex-col items-center w-11/12 mx-auto text-center md:w-full"
           style={{ top: "20%", left: "50%", transform: " translateX(-50%)" }}
@@ -20,7 +20,7 @@ const SectionUpcycleIntro = () => {
               เข้ามาผสมผสานเพื่อทำให้วัสดุเหล่านั้นเกิดการใช้ประโยชน์สูงสุด
             </span>
           </p>
-          <img src={circle} className="mt-10 " />
+          <img src={circle} className="mt-10" />
         </div>
       </div>
       <div>

@@ -1,6 +1,4 @@
 import React, {useEffect} from "react";
-import SwiperCore, {Pagination, Keyboard, Navigation, EffectFade, Autoplay} from "swiper/core"
-import { Swiper } from 'swiper/bundle'
 import Heads from "next/head"
 import Test from "../public/test.svg"
 import nav1 from "../public/nav1.svg"
