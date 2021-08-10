@@ -11,8 +11,11 @@ export default function Home() {
 
   return (
     <>
+      <SectionIntro />
+      <SectionIntroblue />
       <SectionUpcycleIntro />
       <SectionMap />
+      <SectionWaste />
       <SectionMaterial />
     </>
   )

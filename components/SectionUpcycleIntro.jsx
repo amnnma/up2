@@ -13,7 +13,7 @@ const SectionUpcycleIntro = () => {
           </p>
           <br />
           <p className="flex-row font-normal md:flex md:flex-col H5">
-            <span className="test text-3xl">
+            <span className="test text-3xl mt-8">
               หมายถึงการพยายามสร้างคุณค่าสูงสุดให้กับวัสดุเหลือใช้ต่าง ๆ<br />
               ผ่านกระบวนการความคิดสร้างสรรค์และการนำการออกแบบ
               <br />
