@@ -1,117 +1,154 @@
 import { useState } from "react";
 import ReactCompareImage from "react-compare-image";
 import star1 from "../assets/images/star1.svg";
-import pot from "../assets/images/pot.png";
-import kidney from "../assets/images/kidney.png";
-import glassbottle from "../assets/images/glassbottle.png";
-import bike from "../assets/images/bike.png";
-import mat_can from "../assets/images/mat_can.png";
-import metalscrap from "../assets/images/metalscrap.png";
-import oldwood from "../assets/images/oldwood.png";
-import sailcloth from "../assets/images/sailcloth.png";
-import sliper from "../assets/images/sliper.png";
-import upbag from "../assets/images/upcy_bag.png";
+import images from "../assets/images/index";
 import close_modal from "../assets/images/close_modal.svg";
 import start_quiz from "../assets/images/start_quiz.svg";
 
 const select_image2 = [
   {
     id: 1,
-    imgA: kidney,
-    imgB: upbag,
+    imgA: images.pot,
+    imgB: images.bellring,
+    nameA: "ถุงน้ำยาล้างไต",
+    priceA: 5,
+    nameB: "KIDDEE Project No.1",
+    typeB: "กระเป๋า",
+    brandB: "คิดดีโปรเจ็ค",
+    priceB: 1650,
   }
 ]
 const select_image = [
   {
     id: 1,
-    imgA: kidney,
-    imgB: upbag,
-    nameA: "ถุงน้ำยาล้างไต",
-    priceA: -5,
-    nameB: "KIDDEE Project No.1",
-    typeB: "กระเป๋า",
-    brandB: "คิดดีโปรเจ็ค",
-    priceB: 1650,
+    imgA: images.pot,
+    imgB: images.bellring,
+    nameA: "หม้อหุงข้าว",
+    priceA: 30,
+    nameB: "Rice bell",
+    typeB: "กระดิ่งรถจักรยาน",
+    brandB: "Kevin Cheung",
+    priceB: 780,
   },
   {
     id: 2,
-    imgA: kidney,
-    imgB: upbag,
+    imgA: images.kidney,
+    imgB: images.upbag,
     nameA: "ถุงน้ำยาล้างไต",
     priceA: -5,
     nameB: "KIDDEE Project No.1",
     typeB: "กระเป๋า",
     brandB: "คิดดีโปรเจ็ค",
-    priceB: 1650,
+    priceB: 1650
   },
   {
     id: 3,
-    imgA: kidney,
-    imgB: upbag,
-    nameA: "ถุงน้ำยาล้างไต",
-    priceA: -5,
-    nameB: "KIDDEE Project No.1",
-    typeB: "กระเป๋า",
-    brandB: "คิดดีโปรเจ็ค",
-    priceB: 1650,
+    imgA: images.mat_can,
+    imgB: images.upcan,
+    nameA: "กระป๋องสังกะสี",
+    priceA: 3.10,
+    nameB: "CLOCK NO.7 – BLACK AND WALNUT",
+    typeB: "นาฬิกาตั้งโต๊ะ",
+    brandB: "UPCYCLED THAT",
+    priceB: 1568
   },
   {
     id: 4,
-    imgA: kidney,
-    imgB: upbag,
-    nameA: "ถุงน้ำยาล้างไต",
-    priceA: -5,
-    nameB: "KIDDEE Project No.1",
-    typeB: "กระเป๋า",
-    brandB: "คิดดีโปรเจ็ค",
-    priceB: 1650,
+    imgA: images.partbike,
+    imgB: images.bikelamp,
+    nameA: "ไฟจักรยาน",
+    priceA: 10,
+    nameB: "UPCYCLED BIKE LAMP-LIGHT UP",
+    typeB: "โคมไฟตั้งโต๊ะ",
+    brandB: "THE UPCYCLE",
+    priceB: 3430,
   },
   {
     id: 5,
-    imgA: kidney,
-    imgB: upbag,
-    nameA: "ถุงน้ำยาล้างไต",
-    priceA: -5,
-    nameB: "KIDDEE Project No.1",
-    typeB: "กระเป๋า",
-    brandB: "คิดดีโปรเจ็ค",
-    priceB: 1650,
+    imgA: images.bikewheel,
+    imgB: images.earring,
+    nameA: "ยางรถ",
+    priceA: 0.15,
+    nameB: "UPCYCLED EARRINGS FEATHERS",
+    typeB: "ต่างหู",
+    brandB: "THE UPCYCLE",
+    priceB: 761,
   },
   {
     id: 6,
-    imgA: kidney,
-    imgB: upbag,
-    nameA: "ถุงน้ำยาล้างไต",
-    priceA: -5,
-    nameB: "KIDDEE Project No.1",
-    typeB: "กระเป๋า",
-    brandB: "คิดดีโปรเจ็ค",
-    priceB: 1650,
+    imgA: images.glasbottom,
+    imgB: images.bottlelamp,
+    nameA: "ขวดแก้ว",
+    priceA: 0.30,
+    nameB: "BESPOKE BOTTLE PIPE LAMP",
+    typeB: "โคมไฟตั้งโต๊ะ",
+    brandB: "UPCYCLED CREATIVE",
+    priceB: 5552,
   },
+  {
+    id: 7,
+    imgA: images.silper,
+    imgB: images.upsilper,
+    nameA: "รองเท้าตามชายหาด ",
+    priceA: 5.50,
+    nameB: "Cheug (เชือก)",
+    typeB: "รองเท้าแตะ",
+    brandB: "Tlejourn : ทะเลจร",
+    priceB: 399,
+  },
+  {
+    id: 8,
+    imgA: images.metalscrap,
+    imgB: images.chandelier,
+    nameA: "เศษเหล็กจากการก่อสร้าง",
+    priceA: 15,
+    nameB: "Chat (โคมฉัตร)",
+    typeB: "โคมระย้า",
+    brandB: "Pin Metal Art",
+    priceB: 100000,
+  },
+  {
+    id: 9,
+    imgA: images.oldwood,
+    imgB: images.nest,
+    nameA: "ไม้ที่ผุพังแล้ว",
+    priceA: 35,
+    nameB: "HOUSE SPARROW NEST BOX",
+    typeB: "รังนก/รังกระรอก",
+    brandB: "THE UPCYCLE",
+    priceB: 3623,
+  },
+  {
+    id: 10,
+    imgA: images.sailcloth,
+    imgB: images.chandelier,
+    nameA: "ผ้าใบเรือ",
+    priceA: 200,
+    nameB: "TOASTIE",
+    typeB: "กระเป๋า",
+    brandB: "UPCYCLED THAT",
+    priceB: 896,
+  }
 ];
 const SectionMaterial = () => {
   const [Modal, setModal] = useState(false);
+  const [imageID, setimageID] = useState(0)
 
-  const openModal = () => {
+  const openModal = (data) => {
+    setimageID(data)
     setModal(true);
   };
 
   const closeModal = () => {
+
     setModal(false);
   };
 
   return (
-    <div style={{ background: "#000000" }}>
+    <div className="relative z-50 min-h-screen" style={{ background: "#000000" }}>
+      <br/>
       <div className="container flex flex-col justify-around min-h-screen mx-auto text-center">
         <span className="text-4xl text-white">
-          หลังจากที่เข้าใจ concept ของการ upcycling มากขึ้นแล้ว
-          <br /> ลองมาดูกันดีกว่า ว่าเศษวัสดุเหลือใช้ที่เราเห็นตามที่ต่าง ๆ
-          สามารถนำมา
-          <br /> upcycling และเพิ่มมูลค่าได้มากมายทีเดียว
-        </span>
-      </div>
-      <div className="container flex flex-col justify-around min-h-screen mx-auto text-center">
-        <span className="text-6xl text-white">
           เศษวัสดุเหล่านี้
           <br />
           เอาไปทำไปทำเป็นอะไรได้บ้างนะ ?
@@ -121,8 +158,8 @@ const SectionMaterial = () => {
         </p>
         <div className="grid grid-cols-3">
           {select_image.map((d) => (
-            <div>
-              <img src={d.imgA} onClick={() => openModal()} />
+            <div key={d.id}>
+              <img src={d.imgA} onClick={() => openModal()}/>
             </div>
           ))}
         </div>
