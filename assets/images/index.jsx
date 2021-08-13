@@ -19,8 +19,25 @@ import nest from "./nest.png";
 import bike from './bike.png'
 import sailcloth from "./sailcloth.png"
 import sailbag from "./sailbag.png"
-
+import waste from "./waste.svg"
+import wastenation from "./wastenation.svg"
+import introi from "./introi.png"
+import wasteimage from "./wasteimage.png"
+import wasteimage2 from "./wasteimage2.png"
+import wasteimage3 from "./wasteimage3.png"
+import upwasteimage from "./upwasteimage.png"
+import upwasteimage2 from "./upwasteimage2.png"
+import upwasteimage3 from "./upwasteimage3.png"
 const images =  {
+  wasteimage,
+  wasteimage2,
+  wasteimage3,
+  upwasteimage,
+  upwasteimage2,
+  upwasteimage3,
+  introi,
+  wastenation,
+  waste,
   sailbag,
   sailcloth,
   bike,

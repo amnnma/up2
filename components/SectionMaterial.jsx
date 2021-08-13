@@ -132,10 +132,9 @@ const select_image = [
 ];
 const SectionMaterial = () => {
   const [Modal, setModal] = useState(false);
-  const [imageID, setimageID] = useState(0)
 
-  const openModal = (data) => {
-    setimageID(data)
+
+  const openModal = () => {
     setModal(true);
   };
 
@@ -156,12 +155,8 @@ const SectionMaterial = () => {
         <p className="mt-3 text-center text-white B3 opacity-30">
           (กดคลิกวัสดุเพื่อดูรายละเอียด)
         </p>
-        <div className="grid grid-cols-3">
-          {select_image.map((d) => (
-            <div key={d.id}>
-              <img src={d.imgA} onClick={() => openModal()}/>
-            </div>
-          ))}
+        <div className="relative w-full max-w-4xl">
+            <img id="1" src={images.pot}  className="absolute z-10 " style={{ transform: " translateX(1%)" }} onClick={() => openModal()}/>
         </div>
         <div>
           <span className="test text-white H6">
@@ -184,18 +179,11 @@ const SectionMaterial = () => {
             }}
           >
             <div className="flex flex-col B2 text-blue-7">
-              {select_image2.map((d) => {
-                return (
-                  <div>
                     <ReactCompareImage
-                      key={d.id}
-                      leftImage={d.imgA}
-                      rightImage={d.imgB}
+                      leftImage={images.upbag}
+                      rightImage={images.upcan}
                       sliderLineColor="#FC3F4D"
                     />
-                  </div>
-                );
-              })}
             </div>
             <div className="flex justify-start mt-1 space-x-3">
               <img
