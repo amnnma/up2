@@ -1,5 +1,5 @@
 import { Flourish } from "../components/util/Flourish";
-const SectionFlourish = () => {
+const SectionMap = () => {
   return (
     <div>
       <div
@@ -15,4 +15,4 @@ const SectionFlourish = () => {
     </div>
   );
 };
-export default SectionFlourish;
+export default SectionMap;

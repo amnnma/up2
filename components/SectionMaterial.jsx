@@ -5,19 +5,6 @@ import images from "../assets/images/index";
 import close_modal from "../assets/images/close_modal.svg";
 import start_quiz from "../assets/images/start_quiz.svg";
 
-const select_image2 = [
-  {
-    id: 1,
-    imgA: images.pot,
-    imgB: images.bellring,
-    nameA: "ถุงน้ำยาล้างไต",
-    priceA: 5,
-    nameB: "KIDDEE Project No.1",
-    typeB: "กระเป๋า",
-    brandB: "คิดดีโปรเจ็ค",
-    priceB: 1650,
-  }
-]
 const select_image = [
   {
     id: 1,
@@ -39,18 +26,18 @@ const select_image = [
     nameB: "KIDDEE Project No.1",
     typeB: "กระเป๋า",
     brandB: "คิดดีโปรเจ็ค",
-    priceB: 1650
+    priceB: 1650,
   },
   {
     id: 3,
     imgA: images.mat_can,
     imgB: images.upcan,
     nameA: "กระป๋องสังกะสี",
-    priceA: 3.10,
+    priceA: 3.1,
     nameB: "CLOCK NO.7 – BLACK AND WALNUT",
     typeB: "นาฬิกาตั้งโต๊ะ",
     brandB: "UPCYCLED THAT",
-    priceB: 1568
+    priceB: 1568,
   },
   {
     id: 4,
@@ -79,7 +66,7 @@ const select_image = [
     imgA: images.glasbottom,
     imgB: images.bottlelamp,
     nameA: "ขวดแก้ว",
-    priceA: 0.30,
+    priceA: 0.3,
     nameB: "BESPOKE BOTTLE PIPE LAMP",
     typeB: "โคมไฟตั้งโต๊ะ",
     brandB: "UPCYCLED CREATIVE",
@@ -90,7 +77,7 @@ const select_image = [
     imgA: images.silper,
     imgB: images.upsilper,
     nameA: "รองเท้าตามชายหาด ",
-    priceA: 5.50,
+    priceA: 5.5,
     nameB: "Cheug (เชือก)",
     typeB: "รองเท้าแตะ",
     brandB: "Tlejourn : ทะเลจร",
@@ -128,24 +115,27 @@ const select_image = [
     typeB: "กระเป๋า",
     brandB: "UPCYCLED THAT",
     priceB: 896,
-  }
+  },
 ];
 const SectionMaterial = () => {
   const [Modal, setModal] = useState(false);
+  const [current, setCurrent] = useState(id);
 
-
-  const openModal = () => {
+  const openModal = (id) => {
+    setCurrent(id)
     setModal(true);
   };
 
   const closeModal = () => {
-
     setModal(false);
   };
 
   return (
-    <div className="relative z-50 min-h-screen" style={{ background: "#000000" }}>
-      <br/>
+    <div
+      className="relative z-50 min-h-screen"
+      style={{ background: "#000000" }}
+    >
+      <br />
       <div className="container flex flex-col justify-around min-h-screen mx-auto text-center">
         <span className="text-4xl text-white">
           เศษวัสดุเหล่านี้
@@ -156,7 +146,8 @@ const SectionMaterial = () => {
           (กดคลิกวัสดุเพื่อดูรายละเอียด)
         </p>
         <div className="relative w-full max-w-4xl">
-            <img id="1" src={images.pot}  className="absolute z-10 " style={{ transform: " translateX(1%)" }} onClick={() => openModal()}/>
+          <img key={id} src={images.pot} onClick={() => openModal(id)} />
+          <img key={id} src={images.pot} onClick={() => openModal(id)} />
         </div>
         <div>
           <span className="test text-white H6">
@@ -166,7 +157,6 @@ const SectionMaterial = () => {
             <br />
             การ upcycling แบบไหนที่เหมาะกับสไตล์ของคุณ
           </span>
-
         </div>
         {Modal ? (
           <div
@@ -179,11 +169,24 @@ const SectionMaterial = () => {
             }}
           >
             <div className="flex flex-col B2 text-blue-7">
-                    <ReactCompareImage
-                      leftImage={images.upbag}
-                      rightImage={images.upcan}
-                      sliderLineColor="#FC3F4D"
-                    />
+              {select_image.map((image, id) => {
+                return (
+                  <div
+                  className={
+                      id === current ? 'slide active' : 'slide'
+                  }
+                  key={id}
+              >
+                  {id === current && (
+                      <img
+                          alt=''
+                          className='image'
+                          src={images.bikelamp}
+                      />
+                  )}
+              </div>
+                )
+                })}
             </div>
             <div className="flex justify-start mt-1 space-x-3">
               <img
