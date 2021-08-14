@@ -1,6 +1,5 @@
 import circle from "../assets/images/circle.svg";
 import timeline from "../assets/images/timeline.png";
-import Image from 'next/image'
 const SectionUpcycleIntro = () => {
   return (
     <div className="relative" id="wrapper">
@@ -17,7 +16,7 @@ const SectionUpcycleIntro = () => {
           <p className="flex-row font-normal md:flex md:flex-col">
             <span className="H5">
               หมายถึงการพยายามสร้างคุณค่าสูงสุดให้กับวัสดุเหลือใช้ต่าง ๆ<br />
-              ผ่านกระบวนการความคิดสร้างสรรค์และการนำการออกแบบ
+              ผ่านกระบวนการความคิดสร้างสรรค์sและการนำการออกแบบ
               <br />
               เข้ามาผสมผสานเพื่อทำให้วัสดุเหล่านั้นเกิดการใช้ประโยชน์สูงสุด
             </span>
@@ -25,9 +24,8 @@ const SectionUpcycleIntro = () => {
           <img src={circle} className="mt-10" />
         </div>
       </div>
-      <Image src={timeline}  alt="train to dev" layout="responsive" width={1223} height={2998}/>
+      <img src={timeline}  alt="train to dev" layout="responsive" width={1223} height={2998}/>
     </div>
-    
   );
 };
 
