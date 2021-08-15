@@ -1,5 +1,6 @@
 import star from "../assets/images/star1_1.svg";
 import star2 from "../assets/images/star1_2.svg";
+import wastex from "../assets/images/test.svg";
 import image from "../assets/images";
 const SectionIntroblue = () => {
   return (
@@ -11,11 +12,16 @@ const SectionIntroblue = () => {
             อาจมีมูลค่าเป็นศูนย์และอาจต้องลงเอยในกองขยะฝังกลบ
           </div>
         </div>
-        <div className="grid md:grid-flow-col max-w-4xl w-11/12 py-16 mx-auto">
+        <div className="grid md:grid-flow-col max-w-4xl w-11/12 py-16  mx-auto">
           <img src={image.wasteimage} alt="" />
           <img src={image.wasteimage2} alt="" />
           <img src={image.wasteimage3} alt="" />
         </div>
+        <div>
+          <img src={wastex} alt="" />
+        </div>
+      </div>
+      <div className="container flex flex-col justify-around min-h-screen py-10 mx-auto text-center md:py-16">
         <div className="w-11/12 mx-auto md:w-9/12 lg:w-6/12">
           <div className="text-white H5">
             <p>
@@ -30,7 +36,12 @@ const SectionIntroblue = () => {
           <img src={image.upwasteimage2} alt="" />
           <img src={image.upwasteimage3} alt="" />
         </div>
-        <span className="text-white H6 w-11/12 mx-auto md:w-9/12 lg:w-6/12">
+        <div>
+          <img src={wastex} alt="" />
+        </div>
+      </div>
+      <div className="container flex flex-col justify-around min-h-screen py-10 mx-auto text-center md:py-16">
+        <span className="text-white H5 w-11/12 mx-auto md:w-9/12 lg:w-6/12">
           <img
             src={star}
             alt=""

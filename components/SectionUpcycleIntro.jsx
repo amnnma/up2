@@ -1,5 +1,6 @@
 import circle from "../assets/images/circle.svg";
-import timeline from "../assets/images/timeline.png";
+import Image from 'next/image'
+import timeline from "../public/timeline.png";
 const SectionUpcycleIntro = () => {
   return (
     <div className="relative" id="wrapper">
@@ -24,7 +25,7 @@ const SectionUpcycleIntro = () => {
           <img src={circle} className="mt-10" />
         </div>
       </div>
-      <img src={timeline}  alt="train to dev" layout="responsive" width={1223} height={2998}/>
+      <Image src={timeline}  alt="train to dev" layout="responsive" width={1223} height={2998}/>
     </div>
   );
 };
