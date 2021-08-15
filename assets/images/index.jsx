@@ -31,8 +31,9 @@ import upwasteimage3 from "./upwasteimage3.png"
 import star2 from "./star2.svg"
 import wasteperton from "./wasteperton.png"
 import graph1 from "./graph1.png"
-
+import wastemoutain from "./wastemoutain.png"
 const images =  {
+  wastemoutain,
   graph1,
   wasteperton,
   star2,

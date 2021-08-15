@@ -5,7 +5,7 @@ import SectionIntroblue from '../components/SectionIntroblue'
 import SectionWaste  from '../components/SectionWaste'
 import SectionUpcycleIntro from '../components/SectionUpcycleIntro'
 import SectionMaterial from '../components/SectionMaterial'
-
+import SectionCardflip from '../components/SectionCardflip'
 
 export default function Home() {
 
@@ -16,6 +16,7 @@ export default function Home() {
       <SectionUpcycleIntro />
       <SectionMap />
       <SectionWaste />
+      <SectionCardflip />
     </>
   )
 }
