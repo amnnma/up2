@@ -15,14 +15,14 @@ const SectionWaste = () => {
       </div>
       <div style={{ background: "#FFFFFF" }}>
         <div className="container flex flex-col justify-around min-h-screen py-10 mx-auto text-center md:py-16">
-          <div className="grid grid-cols-4">
+          <div className="grid grid-cols-3">
             <img src={image.star2} className="relative z-auto" alt="" />
-            <p className="H6">
+            <span className="test H5">
               ในขณะที่ทั่วโลกให้ความสำคัญกับการจัดการขยะ
               ประเทศไทยยังคงเผชิญปัญหาขยะอย่างต่อเนื่อง
               ซึ่งก่อให้เกิดปัญหามลพิษมากมายตามมา เราจะมาชวนดูกันว่า ทำไม
               upcycling จึงเป็นหนึ่งในวิธีการลดขยะที่ควรให้ความสนใจ ?
-            </p>
+            </span>
             <img
               src={image.waste}
               alt=""
@@ -37,8 +37,7 @@ const SectionWaste = () => {
             </span>
             <img
               src={image.wastenation}
-              className="object-center"
-              style={{ top: "50%", left: "50%", transform: "translateX(20%)" }}
+              className="relative min-h-screen" style={{ top: "50%", left: "50%", transform: "translateX(-50%)" }}
               alt=""
             />
           </div>
@@ -57,8 +56,7 @@ const SectionWaste = () => {
             <br />
             <img
               src={image.wasteperton}
-              className="object-center"
-              style={{ top: "50%", left: "50%", transform: "translateX(40%)" }}
+              className="relative min-h-screen" style={{ top: "50%", left: "50%", transform: "translateX(-50%)" }}
               alt=""
             />
           </div>
@@ -80,8 +78,7 @@ const SectionWaste = () => {
         </div>
         <img
           src={image.graph1}
-          className="object-center"
-          style={{ top: "50%", left: "50%", transform: "translateX(40%)" }}
+          className="relative min-h-screen" style={{ top: "50%", left: "50%", transform: "translateX(-50%)" }}
           alt=""
         />
         <div style={{ background: "#000000" }}>

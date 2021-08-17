@@ -32,7 +32,19 @@ import star2 from "./star2.svg"
 import wasteperton from "./wasteperton.png"
 import graph1 from "./graph1.png"
 import wastemoutain from "./wastemoutain.png"
+import card1_1 from "./card1_1.png"
+import card1_2 from "./card1_2.png"
+import card1_3 from "./card1_3.png"
+import card2_1 from "./card2_1.png"
+import card2_2 from "./card2_2.png"
+import card2_3 from "./card2_3.png"
 const images =  {
+  card1_1,
+  card1_2,
+  card1_3,
+  card2_1,
+  card2_2,
+  card2_3,
   wastemoutain,
   graph1,
   wasteperton,

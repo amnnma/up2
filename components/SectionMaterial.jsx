@@ -5,6 +5,19 @@ import images from "../assets/images/index";
 import close_modal from "../assets/images/close_modal.svg";
 import start_quiz from "../assets/images/start_quiz.svg";
 
+const select_image2 = [
+  {
+    id: 1,
+    imgA: images.pot,
+    imgB: images.bellring,
+    nameA: "หม้อหุงข้าว",
+    priceA: 30,
+    nameB: "Rice bell",
+    typeB: "กระดิ่งรถจักรยาน",
+    brandB: "Kevin Cheung",
+    priceB: 780,
+  }
+]
 const select_image = [
   {
     id: 1,
@@ -119,10 +132,9 @@ const select_image = [
 ];
 const SectionMaterial = () => {
   const [Modal, setModal] = useState(false);
-  const [current, setCurrent] = useState(id);
-
+  const [select_data, setData] = useState(0);
   const openModal = (id) => {
-    setCurrent(id)
+    setData(id);
     setModal(true);
   };
 
@@ -146,54 +158,85 @@ const SectionMaterial = () => {
           (กดคลิกวัสดุเพื่อดูรายละเอียด)
         </p>
         <div className="relative w-full max-w-4xl">
-          <img key={id} src={images.pot} onClick={() => openModal(id)} />
-          <img key={id} src={images.pot} onClick={() => openModal(id)} />
+          {select_image.map((id) => {
+            return (
+              <img src={id.imgA} alt="pot" onClick={() => openModal()} />
+            )
+          })}
         </div>
         <div>
-          <span className="test text-white H6">
-            หลังจากที่ได้รู้เกี่ยวกับ upcycling กันไปแล้ว
-            <br />
-            มาดูกันดีกว่าว่าถ้าคุณอยากจะสร้างผลงาน upcylcing สักหนึ่งชิ้น
-            <br />
-            การ upcycling แบบไหนที่เหมาะกับสไตล์ของคุณ
-          </span>
-        </div>
+            <div className="container flex flex-col justify-around min-h-screen py-10 mx-auto text-center md:py-16 H4 text-white">
+              <div className="H5 font-normal ">
+                <p className="text-white">
+                  หลังจากที่ได้รู้เกี่ยวกับ upcycling กันไปแล้ว<br />
+                  มาดูกันดีกว่าว่าถ้าคุณอยากจะสร้างผลงาน upcylcing สักหนึ่งชิ้น<br />
+                  การ upcycling แบบไหนที่เหมาะกับสไตล์ของคุณ
+                </p>
+                <button>Test</button>
+              </div>
+            </div>
+          </div>
         {Modal ? (
           <div
             id="modal"
-            className="fixed z-50 w-full p-4 bg-white top-2/4 rounded-3xl left-2/4 "
+            className="fixed z-50 w-full p-4 top-2/4 rounded-3xl left-2/4 "
             style={{
               background: "#4D8684",
               transform: "translate(-50%, -50%)",
-              maxWidth: "490px",
+              maxWidth: "1600px",
             }}
           >
-            <div className="flex flex-col B2 text-blue-7">
-              {select_image.map((image, id) => {
-                return (
-                  <div
-                  className={
-                      id === current ? 'slide active' : 'slide'
-                  }
-                  key={id}
-              >
-                  {id === current && (
-                      <img
-                          alt=''
-                          className='image'
-                          src={images.bikelamp}
-                      />
-                  )}
-              </div>
-                )
-                })}
-            </div>
             <div className="flex justify-start mt-1 space-x-3">
               <img
                 src={close_modal}
                 onClick={() => closeModal()}
                 className="cursor-pointer"
               />
+            </div>
+            <div className="mt-8 grid sm:grid-cols-3 sm:gap-6 md:gap-10 xl:w-9/12 xl:mx-auto">
+              <div className="mx-auto sm:ml-auto mb-7 sm:mb-0" id="image">
+                {select_image.imgA?.map((id) => {
+                  
+                  return (
+                    <div>
+                      <b>
+                        วัสดุ : {id.nameA}
+                        <br />
+                        มูลค่า : ~5฿
+                      </b>
+                      <p>
+                        ถุงน้ำยาล้างไตเป็นอุปกรณ์ที่มีความจำเป็น
+                        สำหรับคนที่มีอาการโรคไตเรื้อรัง โดยเฉลี่ยแล้ว คนไข้โรคไต
+                        1 คนต้องใช้ถุงน้ำยาล้างไตทั้งหมด 8
+                        ถุงต่อวันจึงทำให้ในแต่ละวัน
+                        มีถุงน้ำยาล้างไตที่ใช้แล้วเป็นจำนวนมาก{" "}
+                      </p>
+                      <div id="services" className="H6">
+                        <ReactCompareImage
+                          leftImage={id.imgA}
+                          rightImage={id.imgB}
+                          sliderLineWidth={6}
+                          sliderLineColor="red"
+                        />
+                        <div class="mx-auto sm:ml-auto mb-7 sm:mb-0" id="image">
+                          <b>
+                            ชื่อสินค้า : KIDDEE Project No.1 ชนิดสินค้า :
+                            กระเป๋า แบรนด์ : คิดดีโปรเจค ราคา : 1650฿{" "}
+                          </b>
+                          <p>
+                            คิดดี โปรเจค (Kiddee project)
+                            เป็นแบรนด์ธุรกิจเพื่อสังคมที่นำถุงน้ำยาล้างไต
+                            กลับมาเพิ่มมูลค่า ด้วยการฆ่าเชื้อทำความสะอาด
+                            และนำมาผลิตเป็นกระเป๋าที่มีดีไซน์สวยงาม
+                            โดยรายได้จากการขายผลิตภัณฑ์ทั้งหมด
+                            จะถูกนำมาสมทบทุนเพื่อรักษาผู้ป่วยโรคไตอีกด้วย{" "}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  );
+})}
+              </div>
             </div>
           </div>
         ) : (

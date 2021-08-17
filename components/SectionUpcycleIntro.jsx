@@ -4,7 +4,7 @@ const SectionUpcycleIntro = () => {
   return (
     <div className="relative" id="wrapper">
       <div className="relative min-h-screen" style={{ background: "#FFD43B" }}>
-        <div
+      <div
           className="absolute flex flex-col items-center w-11/12 mx-auto text-center md:w-full"
           style={{ top: "10%", left: "50%", transform: " translateX(-50%)" }}
         >
@@ -24,7 +24,7 @@ const SectionUpcycleIntro = () => {
           <img src={circle} className="mt-10" />
         </div>
       </div>
-      <img src={timeline}  className="object-center" style={{ top: "50%", left: "50%", transform: "translateX(20%)" }} alt="train to dev" width={1223} height={2998}/>
+           <img src={timeline}  className="relative min-h-screen" style={{ top: "50%", left: "50%", transform: "translateX(-50%)" }} alt="train to dev"/>
     </div>
   );
 };
