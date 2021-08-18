@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Link from 'next/link'
 import ReactCompareImage from "react-compare-image";
 import star1 from "../assets/images/star1.svg";
 import images from "../assets/images/index";
@@ -130,7 +131,7 @@ const select_image = [
     priceB: 896,
   },
 ];
-const SectionMaterial = () => {
+const SectionMaterial = (goToNext) => {
   const [Modal, setModal] = useState(false);
   const [select_data, setData] = useState(0);
   const openModal = (id) => {
@@ -172,7 +173,9 @@ const SectionMaterial = () => {
                   มาดูกันดีกว่าว่าถ้าคุณอยากจะสร้างผลงาน upcylcing สักหนึ่งชิ้น<br />
                   การ upcycling แบบไหนที่เหมาะกับสไตล์ของคุณ
                 </p>
-                <button>Test</button>
+                <button><Link href="/questions">
+                <a>START</a>
+              </Link></button>
               </div>
             </div>
           </div>
@@ -194,15 +197,13 @@ const SectionMaterial = () => {
               />
             </div>
             <div className="mt-8 grid sm:grid-cols-3 sm:gap-6 md:gap-10 xl:w-9/12 xl:mx-auto">
-              <div className="mx-auto sm:ml-auto mb-7 sm:mb-0" id="image">
-                {select_image.imgA?.map((id) => {
-                  
+                {select_image2.map((id) => {
                   return (
-                    <div>
+                    <div className="mx-auto sm:ml-auto mb-7 sm:mb-0" id="image">
                       <b>
                         วัสดุ : {id.nameA}
                         <br />
-                        มูลค่า : ~5฿
+                        มูลค่า : {id.priceA}
                       </b>
                       <p>
                         ถุงน้ำยาล้างไตเป็นอุปกรณ์ที่มีความจำเป็น
@@ -218,10 +219,13 @@ const SectionMaterial = () => {
                           sliderLineWidth={6}
                           sliderLineColor="red"
                         />
+                      </div>
                         <div class="mx-auto sm:ml-auto mb-7 sm:mb-0" id="image">
                           <b>
-                            ชื่อสินค้า : KIDDEE Project No.1 ชนิดสินค้า :
-                            กระเป๋า แบรนด์ : คิดดีโปรเจค ราคา : 1650฿{" "}
+                            ชื่อสินค้า : {id.nameB} <br/>
+                            ชนิดสินค้า : {id.typeB}<br/> 
+                            แบรนด์ : {id.brandB}<br/> 
+                            ราคา : {id.priceB}
                           </b>
                           <p>
                             คิดดี โปรเจค (Kiddee project)
@@ -232,13 +236,11 @@ const SectionMaterial = () => {
                             จะถูกนำมาสมทบทุนเพื่อรักษาผู้ป่วยโรคไตอีกด้วย{" "}
                           </p>
                         </div>
-                      </div>
                     </div>
                   );
 })}
               </div>
             </div>
-          </div>
         ) : (
           ""
         )}

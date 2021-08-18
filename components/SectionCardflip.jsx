@@ -2,7 +2,12 @@ import redborder from "../assets/images/redborder.svg";
 import star from "../assets/images/star1_1.svg";
 import star2 from "../assets/images/star1_2.svg";
 import image from "../assets/images/index";
+import ReactCardFlip from "react-card-flip";
+import { useState } from "react";
 const SectionCardflip = () => {
+  const [flip, setFlip] = useState(false);
+  const [flip2, setFlip2] = useState(false);
+  const [flip3, setFlip3] = useState(false);
   return (
     <div style={{ background: "#FFFAEA" }}>
       <div className="container flex flex-col justify-around min-h-screen py-10 mx-auto text-center md:py-16 H4 text-white">
@@ -24,9 +29,51 @@ const SectionCardflip = () => {
           className="grid md:grid-flow-col max-w-4xl w-11/12 py-16 mx-auto transition: transform 0.8s"
           style={{}}
         >
-          <img src={image.card1_1} className="before" alt="6" />
-          <img src={image.card1_2} alt="7" />
-          <img src={image.card1_3} alt="8" />
+          <ReactCardFlip isFlipped={flip} flipDirection="horizontal">
+            <div
+              onMouseEnter={() => setFlip(true)}
+              onMouseLeave={() => setFlip(false)}
+            >
+              <div>
+                <img src={image.card1_1} alt="7" />
+              </div>
+            </div>
+            <div>
+              <div>
+                <img src={image.card2_1} alt="7" />
+              </div>
+            </div>
+          </ReactCardFlip>
+          <ReactCardFlip isFlipped={flip2} flipDirection="horizontal">
+            <div
+              onMouseEnter={() => setFlip2(true)}
+              onMouseLeave={() => setFlip2(false)}
+            >
+              <div>
+                <img src={image.card1_2} alt="7" />
+              </div>
+            </div>
+            <div>
+              <div>
+                <img src={image.card2_2} alt="7" />
+              </div>
+            </div>
+          </ReactCardFlip>
+          <ReactCardFlip isFlipped={flip3} flipDirection="horizontal">
+            <div
+              onMouseEnter={() => setFlip3(true)}
+              onMouseLeave={() => setFlip3(false)}
+            >
+              <div>
+                <img src={image.card1_3} alt="7" />
+              </div>
+            </div>
+            <div>
+              <div>
+                <img src={image.card2_3} alt="7" />
+              </div>
+            </div>
+          </ReactCardFlip>s
         </div>
       </div>
       <div style={{ background: "#000000" }}>
