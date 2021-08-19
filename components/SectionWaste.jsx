@@ -119,7 +119,7 @@ const SectionWaste = () => {
             <div className="mx-auto sm:ml-auto mb-7 sm:mb-0" id="image">
               <img src={smell} alt="Tom Gonzales Online Training" />
             </div>
-            <div class="mx-auto sm:ml-auto mb-7 sm:mb-0" id="image">
+            <div className="mx-auto sm:ml-auto mb-7 sm:mb-0" id="image">
               <img src={dirt} alt="Tom Gonzales Online Training" />
             </div>
             <div id="services" className="H6">

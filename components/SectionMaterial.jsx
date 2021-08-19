@@ -6,19 +6,6 @@ import images from "../assets/images/index";
 import close_modal from "../assets/images/close_modal.svg";
 import start_quiz from "../assets/images/start_quiz.svg";
 
-const select_image2 = [
-  {
-    id: 1,
-    imgA: images.pot,
-    imgB: images.bellring,
-    nameA: "หม้อหุงข้าว",
-    priceA: 30,
-    nameB: "Rice bell",
-    typeB: "กระดิ่งรถจักรยาน",
-    brandB: "Kevin Cheung",
-    priceB: 780,
-  }
-]
 const select_image = [
   {
     id: 1,
@@ -131,11 +118,12 @@ const select_image = [
     priceB: 896,
   },
 ];
-const SectionMaterial = (goToNext) => {
+const SectionMaterial = () => {
   const [Modal, setModal] = useState(false);
-  const [select_data, setData] = useState(0);
-  const openModal = (id) => {
-    setData(id);
+  const [image, setImage] = useState('');
+
+  const openModal = (select_image) => {
+    setImage(select_image)
     setModal(true);
   };
 
@@ -159,11 +147,15 @@ const SectionMaterial = (goToNext) => {
           (กดคลิกวัสดุเพื่อดูรายละเอียด)
         </p>
         <div className="relative w-full max-w-4xl">
-          {select_image.map((id) => {
-            return (
-              <img src={id.imgA} alt="pot" onClick={() => openModal()} />
-            )
-          })}
+              <img key="1" src={images.pot} alt="pot" onClick={() => openModal()} />
+              <img key="2" src={images.kidney} alt="kidney" onClick={() => openModal()} />
+              <img key="3" src={images.mat_can} alt="mat_can" onClick={() => openModal()} />
+              <img key="4" src={images.bike} alt="bike" onClick={() => openModal()} />
+              <img key="5" src={images.glasbottom} alt="glassbottom" onClick={() => openModal()} />
+              <img key="6" src={images.silper} alt="silper" onClick={() => openModal()} />
+              <img key="7" src={images.metalscrap} alt="metalscrap" onClick={() => openModal()} />
+              <img key="8" src={images.oldwood} alt="oldwood" onClick={() => openModal()} />
+              <img key="9" src={images.sailcloth} alt="sailcloth" onClick={() => openModal()} />
         </div>
         <div>
             <div className="container flex flex-col justify-around min-h-screen py-10 mx-auto text-center md:py-16 H4 text-white">
@@ -173,15 +165,12 @@ const SectionMaterial = (goToNext) => {
                   มาดูกันดีกว่าว่าถ้าคุณอยากจะสร้างผลงาน upcylcing สักหนึ่งชิ้น<br />
                   การ upcycling แบบไหนที่เหมาะกับสไตล์ของคุณ
                 </p>
-                <button><Link href="/questions">
-                <a>START</a>
-              </Link></button>
               </div>
             </div>
           </div>
         {Modal ? (
           <div
-            id="modal"
+            id={select_image.id}
             className="fixed z-50 w-full p-4 top-2/4 rounded-3xl left-2/4 "
             style={{
               background: "#4D8684",
@@ -197,13 +186,11 @@ const SectionMaterial = (goToNext) => {
               />
             </div>
             <div className="mt-8 grid sm:grid-cols-3 sm:gap-6 md:gap-10 xl:w-9/12 xl:mx-auto">
-                {select_image2.map((id) => {
-                  return (
                     <div className="mx-auto sm:ml-auto mb-7 sm:mb-0" id="image">
                       <b>
-                        วัสดุ : {id.nameA}
+                        วัสดุ : {select_image.nameA}
                         <br />
-                        มูลค่า : {id.priceA}
+                        มูลค่า : {select_image.priceA}
                       </b>
                       <p>
                         ถุงน้ำยาล้างไตเป็นอุปกรณ์ที่มีความจำเป็น
@@ -214,18 +201,18 @@ const SectionMaterial = (goToNext) => {
                       </p>
                       <div id="services" className="H6">
                         <ReactCompareImage
-                          leftImage={id.imgA}
-                          rightImage={id.imgB}
+                          leftImage={select_image.imgA}
+                          rightImage={select_image.imgB}
                           sliderLineWidth={6}
                           sliderLineColor="red"
                         />
                       </div>
-                        <div class="mx-auto sm:ml-auto mb-7 sm:mb-0" id="image">
+                        <div className="mx-auto sm:ml-auto mb-7 sm:mb-0" id="image">
                           <b>
-                            ชื่อสินค้า : {id.nameB} <br/>
-                            ชนิดสินค้า : {id.typeB}<br/> 
-                            แบรนด์ : {id.brandB}<br/> 
-                            ราคา : {id.priceB}
+                            ชื่อสินค้า : {select_image.nameB} <br/>
+                            ชนิดสินค้า : {select_image.typeB}<br/> 
+                            แบรนด์ : {select_image.brandB}<br/> 
+                            ราคา : {select_image.priceB}
                           </b>
                           <p>
                             คิดดี โปรเจค (Kiddee project)
@@ -237,8 +224,6 @@ const SectionMaterial = (goToNext) => {
                           </p>
                         </div>
                     </div>
-                  );
-})}
               </div>
             </div>
         ) : (
