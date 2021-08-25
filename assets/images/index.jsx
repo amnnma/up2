@@ -42,7 +42,7 @@ import sailcloth2 from "./sailcloth2.png"
 import arrow from "assets/images/arrow.svg"
 import europe from "./europe.png"
 import thailand from "./thailand.png"
-import introimage from "./introimage.svg"
+import introimage from "assets/images/introimage.svg"
 import kidneyY from "./kidneyYellow.png"
 
 const images = {
