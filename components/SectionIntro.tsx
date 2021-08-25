@@ -33,7 +33,7 @@ const SectionIntro = () => {
       <div className="scroll-down">
           <div>
             <i className="fas fa-angle-down animated bounce">
-              <img src={images.arrow} alt="" />
+              <img src={image.arrow} alt="" />
             </i>
           </div>
         </div>
