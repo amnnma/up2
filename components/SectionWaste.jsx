@@ -6,7 +6,7 @@ import divider from "../assets/images/divider.svg";
 const SectionWaste = () => {
   return (
     <div style={{ background: "#FFD43B" }}>
-      <div className="container flex flex-col justify-around min-h-screen py-10 mx-auto text-center md:py-16">
+      <div className="container flex flex-col justify-around min-h-screen py-1 mx-auto text-center md:py-16">
         <span className="text-6xl font-medium leading-snug">
           ปัญหาขยะในไทย
           <br />
@@ -15,7 +15,7 @@ const SectionWaste = () => {
       </div>
       <div style={{ background: "#FFFFFF" }}>
         <div className="container flex flex-col justify-around min-h-screen py-10 mx-auto text-center md:py-16">
-          <div className="grid grid-cols-2">
+          <div className="grid grid-cols-3">
             <img
               src={image.star2}
               className="relative z-auto"
@@ -35,17 +35,18 @@ const SectionWaste = () => {
             <br /> เราจะมาชวนดูกันว่า ทำไม upcycling
             <br /> จึงเป็นหนึ่งในวิธีการลดขยะที่ควรให้ความสนใจ ?
           </span>
-          <div className="grid grid-cols-1">
+          <div>
             <img
               src={image.waste}
               alt=""
-              style={{ top: "-50%", left: "20%", transform: "translateX(90%)" }}
-              className="relative z-50"
+              style={{ top: "60%", left: "60%", transform: "translateY(-50%)" }}
+              className="relative z-auto -mx-20"
             />
           </div>
-          <div className="-my-96 p-50">
+          <div className="-my-96 p-82">
             <span className="H4 font-medium">
-              เมื่อเปรียบเทียบประเทศในกลุ่มของทวีปเอเชีย<br/>
+              เมื่อเปรียบเทียบประเทศในกลุ่มของทวีปเอเชีย
+              <br />
               คุณจะเห็นว่าประเทศไทยคือหนึ่งในประเทศที่ทิ้งขยะมากที่สุดในโลก
             </span>
             <img
@@ -55,21 +56,41 @@ const SectionWaste = () => {
               alt=""
             />
           </div>
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
           <div>
-            <span className="H4 font-semibold mx-40">
-            ช่วงโควิดที่ผ่านมา ประเทศไทยมีขยะมากแค่ไหน ? 
+            <span className="H4 font-semibold mx-auto">
+              ช่วงโควิดที่ผ่านมา ประเทศไทยมีขยะมากแค่ไหน ?
             </span>
             <p className="H6">
               พบว่าในปี 2563 ประเทศไทยมีปริมาณขยะมูลฝอย เกิดขึ้นประมาณ 27.35
               <br />
               ล้านตัน ซึ่งถูกนำไปกำจัดอย่างถูกต้องเพียง 11.19 ล้านตันเท่านั้น
               <br />
-              โดยในช่วงสถานการณ์พบว่าจำนวน<b className="text-blue-400">ขยะมูลฝอยมีปริมาณลดลง</b>
+              โดยในช่วงสถานการณ์พบว่าจำนวน
+              <b className="text-blue-400">ขยะมูลฝอยมีปริมาณลดลง</b>
             </p>
             <br />
             <img
               src={image.wasteperton}
-              className="relative min-h-screen my-72"
+              className="relative min-h-screen"
               style={{ top: "50%", left: "50%", transform: "translateX(-50%)" }}
               alt=""
             />
@@ -82,10 +103,10 @@ const SectionWaste = () => {
               แต่เมื่อดูรายงานการจัดการขยะของประเทศไทยในอดีต (ปี 2553) จะพบว่า
             </span>
             <p className="H6">
-              มีเพียงร้อยละ 26 ของขยะทั้งหมดที่ถูกนำไปรีไซเคิล<br/> ร้อยละ 15
-              คือขยะอินทรีย์ที่นำไปหมักทำปุ๋ยประเภทต่างๆ<br/> ร้อยละ 3
-              ถูกนำไปผลิตไฟฟ้าและเชื้อเพลงทดแทน<br/> แต่กว่าร้อยละ 56
-              ถูกกำจัดด้วยการฝังกลบและการเผา
+              มีเพียงร้อยละ 26 ของขยะทั้งหมดที่ถูกนำไปรีไซเคิล
+              <br /> ร้อยละ 15 คือขยะอินทรีย์ที่นำไปหมักทำปุ๋ยประเภทต่างๆ
+              <br /> ร้อยละ 3 ถูกนำไปผลิตไฟฟ้าและเชื้อเพลงทดแทน
+              <br /> แต่กว่าร้อยละ 56 ถูกกำจัดด้วยการฝังกลบและการเผา
             </p>
             <br />
           </div>
@@ -111,10 +132,13 @@ const SectionWaste = () => {
             </div>
           </div>
         </div>
+        <br/>
+        <br/>
+        <br/>
         <div className="container flex flex-col justify-around min-h-screen py-10 mx-auto text-center md:py-16 ">
           <div className="mt-8 grid sm:grid-cols-2 sm:gap-5 md:gap-10 xl:w-9/12 xl:mx-auto">
             <div className="mx-auto sm:ml-auto mb-7 sm:mb-0" id="image">
-              <img src={air} alt="Tom Gonzales Online Training" />
+              <img src={air} alt="air" />
             </div>
             <div id="services" className="H6">
               <span className="H4 text-black">อากาศ</span>
@@ -132,10 +156,10 @@ const SectionWaste = () => {
               ที่ทั้งเกิดจากขยะที่รอการเผาและกลิ่นไหม้ จากการเผาแล้วของขยะโดยตรง
             </div>
             <div className="mx-auto sm:ml-auto mb-7 sm:mb-0" id="image">
-              <img src={smell} alt="Tom Gonzales Online Training" />
+              <img src={smell} alt="smell" />
             </div>
             <div className="mx-auto sm:ml-auto mb-7 sm:mb-0" id="image">
-              <img src={dirt} alt="Tom Gonzales Online Training" />
+              <img src={dirt} alt="dirt" />
             </div>
             <div id="services" className="H6">
               <span className="H4 text-black">ดิน</span>
@@ -145,6 +169,8 @@ const SectionWaste = () => {
               เบนซิน (Benzene) และไดออกซิน(Dioxin) ซึ่งเป็นสารก่อมะเร็ง
             </div>
           </div>
+          <br />
+          <br />
           <br />
           <img src={divider} alt="" />
           <br />
