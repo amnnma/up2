@@ -1,5 +1,5 @@
 import image from "assets/images/index";
-import introimage from "../assets/images/introimage.svg"
+import introimages from "../assets/images/introimages.svg"
 
 const SectionIntro = () => {
   
@@ -9,7 +9,7 @@ const SectionIntro = () => {
       style = {{ backgroundImage: "url('https://www.img.in.th/images/768e211a1e39b708dd705ea27afe3d07.png')"}}
     >
       <img
-        src={introimage}
+        src={introimages}
         alt="Introimage"
         className="mx-auto"
         style={{ width: "75%", height: "80%" }}
