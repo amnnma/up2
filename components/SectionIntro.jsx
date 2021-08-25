@@ -8,7 +8,7 @@ const SectionIntro = () => {
       style = {{ backgroundImage: "url('https://www.img.in.th/images/768e211a1e39b708dd705ea27afe3d07.png')"}}
     >
       <img
-        src={image.introimage}
+        src="/assets/images/Introimage.svg"
         alt="Introimage"
         className="mx-auto"
         style={{ width: "75%", height: "80%" }}
@@ -33,7 +33,7 @@ const SectionIntro = () => {
       <div className="scroll-down">
           <div>
             <i className="fas fa-angle-down animated bounce">
-              <img src={image.arrow} alt="" />
+              <img src="/assets/images/arrow.svg" alt="" />
             </i>
           </div>
         </div>
