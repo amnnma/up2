@@ -39,10 +39,10 @@ import card2_1 from "./card2_1.png"
 import card2_2 from "./card2_2.png"
 import card2_3 from "./card2_3.png"
 import sailcloth2 from "./sailcloth2.png"
-import arrow from "assets/images/arrow.svg"
+import arrow from "./arrow.svg"
 import europe from "./europe.png"
 import thailand from "./thailand.png"
-import introimage from "assets/images/introimage.svg"
+import introimage from "./introimage.svg"
 import kidneyY from "./kidneyYellow.png"
 
 const images = {
