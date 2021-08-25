@@ -25,6 +25,20 @@ const SectionQuiz = () => {
   useEffect(()=>{
     getQuestion()
   },[])
+
+  const prevQuestion = () =>{
+  
+    if(currentQuestion != 0){
+      const tirarUltimaEscolha = choices.filter(ultimaEscolha)
+      setChoices((arr) => [...tirarUltimaEscolha])
+      const previousQuestion = currentQuestion - 1;
+      setCurrentQuestion(previousQuestion)
+    }
+  }
+  
+  function ultimaEscolha(value) {
+    return value != choices[choices.length - 1];
+  }
   
   const handleAnswerButtonClick = (e, value) => {
     const nextQuestion = currentQuestion + 1;
@@ -74,6 +88,11 @@ const SectionQuiz = () => {
                 null
               }
           </div>
+          <div>
+              <button  onClick={() => prevQuestion()}>
+                ย้อนกลับ
+              </button>
+            </div>
         </div>
        </div>
        </div>

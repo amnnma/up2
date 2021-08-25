@@ -1,4 +1,4 @@
-import image from "../assets/images/index";
+import image from "assets/images/index";
 
 const SectionIntro = () => {
   
