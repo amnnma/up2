@@ -7,6 +7,12 @@ const SectionIntro = () => {
       className="bg-yellow-300 relative z-50 min-h-screen bg-fixed"
       style = {{ backgroundImage: "url('https://www.img.in.th/images/768e211a1e39b708dd705ea27afe3d07.png')"}}
     >
+      <img
+        src={image.introimage}
+        alt="Introimage"
+        className="mx-auto"
+        style={{ width: "75%", height: "80%" }}
+      />
       <div
         className="absolute flex flex-col items-center w-11/12 mx-auto text-center md:w-full"
         style={{ top: "30%", left: "50%", transform: " translateX(-50%)" }}

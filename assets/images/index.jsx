@@ -43,8 +43,10 @@ import arrow from "./arrow.svg"
 import europe from "./europe.png"
 import thailand from "./thailand.png"
 import kidneyY from "./kidneyYellow.png"
+import introimage from "./introimage.svg"
 
 const images = {
+  introimage,
   kidneyY,
   thailand,
   europe,

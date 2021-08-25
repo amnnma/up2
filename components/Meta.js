@@ -1,9 +1,9 @@
 import React from "react";
 import Head from "next/head";
-
+import config from "tsconfig.json"
 
 const Meta = () => {
-  const web_url = "https://upcycling-culture.netlify.app"
+  const web_url = config.web_url
   const title = 'Waste is money Upcycling is culture'
   const description = 'Upcycling วิถีใหม่แห่งการลดขยะ เพิ่มมูลค่าและช่วยโลก'
   const og_image = 'og_image.png'
