@@ -6,6 +6,7 @@ import SectionWaste  from '../components/SectionWaste'
 import SectionUpcycleIntro from '../components/SectionUpcycleIntro'
 import SectionMaterial from '../components/SectionMaterial'
 import SectionCardflip from '../components/SectionCardflip'
+import SectionFooter from '../components/SectionFooter'
 
 export default function Home() {
 
@@ -19,6 +20,7 @@ export default function Home() {
       <SectionCardflip />
       <SectionMaterial />
       <SectionQuiz />
+      <SectionFooter />
     </>
   )
 }

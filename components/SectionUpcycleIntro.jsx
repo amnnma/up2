@@ -16,7 +16,7 @@ const SectionUpcycleIntro = () => {
           <p className="flex-row font-normal md:flex md:flex-col">
             <span className="H5">
               หมายถึงการพยายามสร้างคุณค่าสูงสุดให้กับวัสดุเหลือใช้ต่าง ๆ<br />
-              ผ่านกระบวนการความคิดสร้างสรรค์sและการนำการออกแบบ
+              ผ่านกระบวนการความคิดสร้างสรรค์และการนำการออกแบบ
               <br />
               เข้ามาผสมผสานเพื่อทำให้วัสดุเหล่านั้นเกิดการใช้ประโยชน์สูงสุด
             </span>
@@ -24,7 +24,7 @@ const SectionUpcycleIntro = () => {
           <img src={circle} className="mt-10" />
         </div>
       </div>
-           <img src={timeline}  className="relative min-h-screen" style={{ top: "50%", left: "50%", transform: "translateX(-50%)" }} alt="train to dev"/>
+           <img src={timeline}  className="relative min-h-screen my-51" style={{ top: "50%", left: "50%", transform: "translateX(-50%)" }} alt="timeline"/>
     </div>
   );
 };

@@ -38,7 +38,20 @@ import card1_3 from "./card1_3.png"
 import card2_1 from "./card2_1.png"
 import card2_2 from "./card2_2.png"
 import card2_3 from "./card2_3.png"
+import sailcloth2 from "./sailcloth2.png"
+import arrow from "./arrow.svg"
+import europe from "./europe.png"
+import thailand from "./thailand.png"
+import introimage from "./introimage.svg"
+import kidneyY from "./kidneyYellow.png"
+
 const images =  {
+  kidneyY,
+  introimage,
+  thailand,
+  europe,
+  arrow,
+  sailcloth2,
   card1_1,
   card1_2,
   card1_3,
