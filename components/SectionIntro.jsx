@@ -1,5 +1,5 @@
 import image from "assets/images/index";
-import introimages from "/assets/images/introimages.svg"
+import introimages from "../components/util/introimages.svg"
 
 const SectionIntro = () => {
   
