@@ -1,7 +1,6 @@
 import React from "react";
 import Head from "next/head";
 import config from "tsconfig.json"
-import _ from 'lodash'
 
 const Meta = () => {
   const web_url = config.web_url
@@ -13,7 +12,7 @@ const Meta = () => {
     <>
       <Head>
       <title lang='th' >{title}</title>
-        <link rel="icon" type="image/x-icon" href="/upcycling/favicon.ico" />
+        <link rel="icon" type="image/x-icon" href="/upcycling/fav2.ico" />
         <meta name="description" content={description}></meta>
 
         <meta property="og:title" content={title} />
