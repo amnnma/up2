@@ -69,7 +69,7 @@ const SectionQuiz = () => {
             ? <p key={question[currentQuestion].id}>
                 {question[currentQuestion].questionText}
               </p>
-            : <p>End</p> 
+            : <p>image console.error();</p> 
           } 
 
           <div >
