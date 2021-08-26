@@ -1,6 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import config from "tsconfig.json"
+import _ from 'lodash'
 
 const Meta = () => {
   const web_url = config.web_url
