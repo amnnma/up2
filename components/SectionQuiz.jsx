@@ -13,7 +13,7 @@ const SectionQuiz = () => {
 
   const [question,setQuestion]=useState([]);
   const getQuestion=()=>{
-    fetch('/assets/images/questions.json')
+    fetch('/upcycling/questions.json')
       .then(function(response){
         return response.json();
       })

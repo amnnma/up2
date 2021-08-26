@@ -6,17 +6,17 @@
       {
         "id": 0,
         "answer": "ไม่เคยทำมาก่อน",
-        "picture": "/dist/upcycling/imageforquiz/q1-1.svg"
+        "picture": "/upcycling/imageforquiz/q1-1.svg"
       },
       {
         "id": 1,
         "answer": "เคยทำงานประดิษฐ์มาบ้าง",
-        "picture": "/dist/upcycling/imageforquiz/q1-2.svg"
+        "picture": "/upcycling/imageforquiz/q1-2.svg"
       },
       {
         "id": 2,
         "answer": "ทำเป็นประจำอยู่แล้ว",
-        "picture": "/dist/upcycling/imageforquiz/q1-3.svg"
+        "picture": "/upcycling/imageforquiz/q1-3.svg"
       }
     ]
   },
@@ -27,22 +27,22 @@
       {
         "id": 0,
         "answer": "15 นาที",
-        "picture": "/dist/upcycling/imageforquiz/q2-1.svg"
+        "picture": "/upcycling/imageforquiz/q2-1.svg"
       },
       {
         "id": 1,
         "answer": "30 นาที",
-        "picture": "/dist/upcycling/imageforquiz/q2-2.svg"
+        "picture": "/upcycling/imageforquiz/q2-2.svg"
       },
       {
         "id": 2,
         "answer": "1 ชั่วโมง",
-        "picture": "/dist/upcycling/imageforquiz/q2-3.svg"
+        "picture": "/upcycling/imageforquiz/q2-3.svg"
       },
       {
         "id": 3,
         "answer": "1.5 - 2 ชั่วโมง",
-        "picture": "/dist/upcycling/imageforquiz/q2-4.svg"
+        "picture": "/upcycling/imageforquiz/q2-4.svg"
       }
     ]
   },
