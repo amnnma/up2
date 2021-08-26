@@ -44,7 +44,7 @@ import europe from "./europe.png"
 import thailand from "./thailand.png"
 import kidneyY from "./kidneyYellow.png"
 import testresult from "./testresult.png"
-import intro from "./introimages.svg"
+import why from "./whyintro.svg"
 import tem from "./tem.png"
 import gun from "./gun.png"
 import aum from "./aum.png"
@@ -59,7 +59,7 @@ const images = {
   tem,
   gun,
   aum,
-  intro,
+  why,
   testresult ,
   kidneyY,
   thailand,
