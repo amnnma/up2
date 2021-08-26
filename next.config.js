@@ -6,4 +6,7 @@ module.exports = withImages({
     basePath: "/upcycling",
     distDir: "upcycling",  
     fileExtensions: ["jpg", "jpeg", "png", "gif", "svg"],
+    webpack(config, options) {
+      return config
+    }
 })
