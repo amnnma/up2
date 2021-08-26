@@ -12,7 +12,7 @@ const Meta = () => {
     <>
       <Head>
       <title lang='th' >{title}</title>
-        <link rel="icon" type="image/x-icon" href="/upcycling/fav2.ico" />
+        <link rel="icon" type="image/x-icon" href="/upcycling/fav.ico" />
         <meta name="description" content={description}></meta>
 
         <meta property="og:title" content={title} />
