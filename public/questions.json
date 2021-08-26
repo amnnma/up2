@@ -6,20 +6,19 @@
       {
         "id": 0,
         "answer": "ไม่เคยทำมาก่อน",
-        "picture": "/upcycling/imageforquiz/q1-1.svg"
+        "picture": "upcycling/imageforquiz/q1-1.svg"
       },
       {
         "id": 1,
         "answer": "เคยทำงานประดิษฐ์มาบ้าง",
-        "picture": "/upcycling/imageforquiz/q1-2.svg"
+        "picture": "upcycling/imageforquiz/q1-2.svg"
       },
       {
         "id": 2,
         "answer": "ทำเป็นประจำอยู่แล้ว",
-        "picture": "/upcycling/imageforquiz/q1-3.svg"
+        "picture": "upcycling/imageforquiz/q1-3.svg"
       }
-    ],
-    "tip": "kk."
+    ]
   },
   {
     "_id": 1,
@@ -28,25 +27,24 @@
       {
         "id": 0,
         "answer": "15 นาที",
-        "picture": "/upcycling/imageforquiz/q2-1.svg"
+        "picture": "upcycling/imageforquiz/q2-1.svg"
       },
       {
         "id": 1,
         "answer": "30 นาที",
-        "picture": "/upcycling/imageforquiz/q2-2.svg"
+        "picture": "upcycling/imageforquiz/q2-2.svg"
       },
       {
         "id": 2,
         "answer": "1 ชั่วโมง",
-        "picture": "/upcycling/imageforquiz/q2-3.svg"
+        "picture": "upcycling/imageforquiz/q2-3.svg"
       },
       {
         "id": 3,
         "answer": "1.5 - 2 ชั่วโมง",
-        "picture": "/upcycling/imageforquiz/q2-4.svg"
+        "picture": "upcycling/imageforquiz/q2-4.svg"
       }
-    ],
-    "tip": "sdsd"
+    ]
   },
   {
     "_id": 2,
@@ -55,14 +53,13 @@
       {
         "id": 0,
         "answer": "ขวดพลาสติก",
-        "picture": "/upcycling/imageforquiz/q3-1.svg"
+        "picture": "upcycling/imageforquiz/q3-1.svg"
       },
       {
         "id": 1,
         "answer": "หลอดพลาสติก",
-        "picture": "/upcycling/imageforquiz/q3-2.svg"
+        "picture": "upcycling/imageforquiz/q3-2.svg"
       }
-    ],
-    "tip": "Cupidatat tempor est officia nostrud."
+    ]
   }
 ]
