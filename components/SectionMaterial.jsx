@@ -73,33 +73,23 @@ const SectionMaterial = () => {
           (กดคลิกวัสดุเพื่อดูรายละเอียด)
         </p>
         <div className="grid grid-cols-3">
-          <img
-            key="1"
-            src={images.pot}
-            alt="pot"
-            className="mt-60 transform rotate(11.68deg)"
-            onClick={() => openModal()}
-          />
+          <img key="1" src={images.pot} alt="pot" onClick={() => openModal()} />
           <img
             key="2"
             src={images.kidney}
             alt="kidney"
-            className="ml-20"
             onClick={() => openModal2()}
           />
           <img
             key="3"
             src={images.mat_can}
             alt="mat_can"
-            className="mt-80"
             onClick={() => openModal3()}
           />
           <img
             key="4"
             src={images.bike}
             alt="bike"
-            className="relative"
-            style={{ width: "100%", height: "100%" }}
             onClick={() => openModal4()}
           />
           <img
@@ -181,8 +171,8 @@ const SectionMaterial = () => {
               </div>
               <div id="services" className="H6">
                 <ReactCompareImage
-                  leftImage={images.pot}
-                  rightImage={images.bellring}
+                  leftImage={images.pot_yellow}
+                  rightImage={images.bellringyellow}
                   sliderLineWidth={6}
                   sliderLineColor="red"
                 />
@@ -247,7 +237,7 @@ const SectionMaterial = () => {
               <div id="services" className="H6">
                 <ReactCompareImage
                   leftImage={images.kidneyY}
-                  rightImage={images.upbag}
+                  rightImage={images.upcy_bagYellow}
                   sliderLineWidth={6}
                   sliderLineColor="red"
                 />
@@ -365,10 +355,15 @@ const SectionMaterial = () => {
             <div className="mt-8 grid sm:grid-cols-3 sm:gap-6 md:gap-10 xl:w-9/12 xl:mx-auto">
               <div className="mx-auto sm:ml-auto mb-7 sm:mb-0" id="image">
                 <b>
-                  วัสดุ : 101
+                  วัสดุ : ยางรถ
                   <br />
-                  มูลค่า : 101
+                  มูลค่า : ~0.15฿
                 </b>
+                <p>
+                  ในแต่ละปีพบว่า กว่า 100,000 เมตริกตัน ของไมโครพลาสติก
+                  (Microplastics) มีเศษของยางรถยนต์ที่อาจปลิวในอากาศ
+                  และตกลงสู่ทะเล
+                </p>
               </div>
               <div id="services" className="H6">
                 <ReactCompareImage
@@ -379,7 +374,23 @@ const SectionMaterial = () => {
                 />
               </div>
               <div className="mx-auto sm:ml-auto mb-7 sm:mb-0" id="image">
-                d
+                <b>
+                  ชื่อสินค้า : UPCYCLED <br />
+                  EARRINGS FEATHERS
+                  <br />
+                  ชนิดสินค้า : ต่างหู
+                  <br />
+                  แบรนด์ : THE UPCYCLE
+                  <br />
+                  ราคา : 761฿
+                </b>
+                <p>
+                  ต่างหูที่ทำมาจากเหล็ก สเตนเลส หรือวัสดุอื่น ๆ
+                  อาจจะดูธรรมดาเกินไป แต่ด้วยการนำดีไซน์
+                  มาผนวกกับล้อยางรถยนต์ที่ไม่ใช้แล้ว
+                  จึงกลายมาเป็นต่างหูจากยางล้อจักรยานยนต์ ทีมีราคาสูงถึงเกือบ
+                  800 บาทต่อคู่เลยทีเดียว
+                </p>
               </div>
             </div>
           </div>

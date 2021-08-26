@@ -43,8 +43,24 @@ import arrow from "./arrow.svg"
 import europe from "./europe.png"
 import thailand from "./thailand.png"
 import kidneyY from "./kidneyYellow.png"
+import testresult from "./testresult.png"
+import intro from "./introimages.svg"
+import tem from "./tem.png"
+import gun from "./gun.png"
+import aum from "./aum.png"
+import upcy_bagYellow from "./upcy_bagYellow.png"
+import pot_yellow from "./potYellow.png"
+import bellringyellow from "./bellringYellow.png"
 
 const images = {
+  pot_yellow,
+  bellringyellow,
+  upcy_bagYellow,
+  tem,
+  gun,
+  aum,
+  intro,
+  testresult ,
   kidneyY,
   thailand,
   europe,

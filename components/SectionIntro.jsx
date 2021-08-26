@@ -9,7 +9,7 @@ const SectionIntro = () => {
       style = {{ backgroundImage: "url('https://www.img.in.th/images/768e211a1e39b708dd705ea27afe3d07.png')"}}
     >
       <img
-        src={image.introimages}
+        src={image.intro}
         alt="Introimage"
         className="mx-auto"
         style={{ width: "80%", height: "90%" }}
