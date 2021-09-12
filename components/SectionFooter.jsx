@@ -103,7 +103,7 @@ const SectionFooter = () => {
           </div>
         </div>
       </div>
-
+      <img src={image.logo} alt="PU" style={{ transform: " translateX(400%)" }}/>
       <br />
     </div>
   );

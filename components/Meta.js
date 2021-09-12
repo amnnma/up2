@@ -6,13 +6,13 @@ const Meta = () => {
   const web_url = config.web_url
   const title = 'Waste is money Upcycling is culture'
   const description = 'Upcycling วิถีใหม่แห่งการลดขยะ เพิ่มมูลค่าและช่วยโลก'
-  const og_image = '/upcycling/og_image.png'
+  const og_image = 'og_image.png'
 
   return (
     <>
       <Head>
       <title lang='th' >{title}</title>
-        <link rel="icon" type="image/x-icon" href="/upcycling/fav.ico" />
+        <link rel="icon" type="image/x-icon" href="fav.ico" />
         <meta name="description" content={description}></meta>
 
         <meta property="og:title" content={title} />
