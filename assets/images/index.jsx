@@ -51,8 +51,11 @@ import aum from "./aum.png"
 import upcy_bagYellow from "./upcy_bagYellow.png"
 import pot_yellow from "./potYellow.png"
 import bellringyellow from "./bellringYellow.png"
-
+import back from "./back.svg"
+import logo from "./logo.png"
 const images = {
+  logo,
+  back,
   pot_yellow,
   bellringyellow,
   upcy_bagYellow,
