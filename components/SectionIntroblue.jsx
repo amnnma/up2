@@ -36,9 +36,6 @@ const SectionIntroblue = () => {
           <img src={image.upwasteimage2} alt="7" />
           <img src={image.upwasteimage3} alt="8" />
         </div>
-        <div>
-          <img src={wastex} alt="9" />
-        </div>
       </div>
       <div className="container flex flex-col justify-around min-h-screen py-10 mx-auto text-center md:py-16">
         <span className="text-white H5 w-11/12 mx-auto md:w-9/12 lg:w-6/12">

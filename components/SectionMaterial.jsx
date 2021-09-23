@@ -64,8 +64,9 @@ const SectionMaterial = () => {
     >
       <br />
       <div className="container flex flex-col justify-around min-h-screen mx-auto text-center">
-        <span className="text-4xl text-white">
+        <span className="text-5xl text-white">
           เศษวัสดุเหล่านี้
+          <br />
           <br />
           เอาไปทำไปทำเป็นอะไรได้บ้างนะ ?
         </span>

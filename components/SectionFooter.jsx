@@ -9,12 +9,12 @@ const SectionFooter = () => {
         <span className="text-white H4 -ml-54">ขอขอบคุณ</span>
         <br />
         <br />
-        <div class="max-w-full mx-auto space-y-32 text-white">
-          <section class="md:flex md:space-x-10 items-start">
-            <div class="md:w-2/6 sticky top-0 py-4">
-              <h2 class="font-extrabold text-2xl">ข้อมูลจาก</h2>
+        <div className="max-w-full mx-auto space-y-32 text-white">
+          <section className="md:flex md:space-x-10 items-start">
+            <div className="md:w-2/6 sticky top-0 py-4">
+              <h2 className="font-extrabold text-2xl">ข้อมูลจาก</h2>
             </div>
-            <div class="md:w-4/6 leading-snug space-y-6 text-justify">
+            <div className="md:w-4/6 leading-snug space-y-6 text-justify">
               <p>
                 Global waste recycling services market size in 2019 and a
                 forecast to 2027 <br /> ข่าว “ผลิตขยะคนละ 1.15 กก./วัน สธ.ประกาศ
@@ -29,12 +29,12 @@ const SectionFooter = () => {
             </div>
           </section>
 
-          <section class="flex space-x-10 items-start">
-            <div class="w-2/6 sticky top-10">
-              <h2 class="font-extrabold text-2xl">หน่วยงานและองค์กร </h2>
+          <section className="flex space-x-10 items-start">
+            <div className="w-2/6 sticky top-10">
+              <h2 className="font-extrabold text-2xl">หน่วยงานและองค์กร </h2>
             </div>
 
-            <div class="w-4/6 leading-snug space-y-5 text-justify">
+            <div className="w-4/6 leading-snug space-y-5 text-justify">
               <p>
                 มติชนออนไลน์
                 <br /> กรมควบคุมมลพิษ
@@ -52,12 +52,12 @@ const SectionFooter = () => {
             </div>
           </section>
 
-          <section class="flex space-x-10 items-start">
-            <div class="w-2/6 sticky top-10">
-              <h2 class="font-extrabold text-2xl">แหล่งภาพ</h2>
+          <section className="flex space-x-10 items-start">
+            <div className="w-2/6 sticky top-10">
+              <h2 className="font-extrabold text-2xl">แหล่งภาพ</h2>
             </div>
 
-            <div class="w-4/6 leading-snug space-y-5 text-justify">
+            <div className="w-4/6 leading-snug space-y-5 text-justify">
               <p>
                 pngegg.com, kaidee.com, freitag.ch,
                 greenissuessingapore.blogspot.com, earth.com, phuketimes.com,

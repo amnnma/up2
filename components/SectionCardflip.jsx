@@ -88,9 +88,11 @@ const SectionCardflip = () => {
                 transform: " translateX(-50%)",
               }}
             />
+            <span>
             หลังจากที่เข้าใจ concept ของการ upcycling มากขึ้นแล้ว
             ลองมาดูกันดีกว่า ว่าเศษวัสดุเหลือใช้ที่เราเห็นตามที่ต่าง ๆ
             สามารถนำมา upcycling และเพิ่มมูลค่าได้มากมายทีเดียว
+            </span>
             <img
               src={star2}
               className="relative z-auto object-contain"

@@ -121,27 +121,27 @@ const SectionWaste = () => {
           <div className="container flex flex-col justify-around min-h-screen py-10 mx-auto text-center md:py-16 H4 text-white">
             <div className="H4 font-normal ">
               แม้ประเทศไทยจะมีวิธีการจัดการขยะหลายวิธี แต่สุดท้ายแล้ว
-              <br /> การจัดการขยะยังคงใช้สองกระบวนการหลักนั่นคือ
-              <span className="text-red-600">การฝังกลบ</span> และ
-              <span className="text-red-600"> การเผา</span>
+              <br />การจัดการขยะยังคงใช้สองกระบวนการหลักนั่นคือ
+               <a style={{ color: "#E4364B"}}> การฝังกลบ</a> และ
+              <a style={{ color: "#E4364B"}}> การเผา</a>
               <br /> ซึ่งไม่ถือว่าเป็นการกำจัดขยะอย่างยั่งยืน เพราะทั้งสองวิธี
               <br />
-              <span className="text-red-600">
+              <a style={{ color: "#E4364B"}} className="font-bold text-4xl">
                 ต่างสร้างผลกระทบต่อสิ่งแวดล้อมและมลภาวะในระยะยาว
-              </span>
+              </a>
             </div>
           </div>
         </div>
         <br/>
         <br/>
         <br/>
-        <div className="container flex flex-col justify-around min-h-screen py-10 mx-auto text-center md:py-16 ">
+        <div className="container flex flex-col justify-around min-h-screen py-10 mx-auto md:py-16 ">
           <div className="mt-8 grid sm:grid-cols-2 sm:gap-5 md:gap-10 xl:w-9/12 xl:mx-auto">
             <div className="mx-auto sm:ml-auto mb-7 sm:mb-0" id="image">
               <img src={air} alt="air" />
             </div>
             <div id="services" className="H6">
-              <span className="H4 text-black">อากาศ</span>
+              <span className="H4 text-black text-left">อากาศ</span>
               <br />
               <p>
                 การเผาขยะ 1 กิโลกรัมจะทำให้เกิดฝุ่นขนาดเล็ก (ขนาดเล็กกว่า 10
@@ -149,7 +149,7 @@ const SectionWaste = () => {
                 เบนซิน (Benzene) และไดออกซิน(Dioxin) ซึ่งเป็นสารก่อมะเร็ง
               </p>
             </div>
-            <div id="services" className="H6">
+            <div id="services" className="H6 text-right">
               <span className="H4 text-black">กลิ่น</span>
               <br />
               ปัญหาการส่งกลิ่นเหม็นรบกวนพื้นที่ในชุมชน
@@ -174,7 +174,7 @@ const SectionWaste = () => {
           <br />
           <img src={divider} alt="" />
           <br />
-          <div className="H5">
+          <div className="H5 text-center">
             <p className="font-bold">เมื่อการฝังกลบและการเผาไม่ใช่ทางออก</p>{" "}
             เราจึงต้องมองหาวิธีใหม่ที่มีประสิทธิภาพมากกว่า
             ส่งผลเสียต่อสิ่งแวดล้อมน้อยกว่า
