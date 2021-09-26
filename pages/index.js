@@ -1,4 +1,3 @@
-import SectionQuiz from '../components/SectionQuiz'
 import SectionMap from '../components/SectionMap'
 import SectionIntro from '../components/SectionIntro'
 import SectionIntroblue from '../components/SectionIntroblue'
