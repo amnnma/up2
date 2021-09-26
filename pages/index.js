@@ -18,7 +18,6 @@ export default function Home() {
       <SectionWaste />
       <SectionCardflip />
       <SectionMaterial />
-      <SectionQuiz />
       <SectionFooter />
     </>
   )

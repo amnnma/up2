@@ -135,6 +135,12 @@ const SectionMaterial = () => {
               <br />
               การ upcycling แบบไหนที่เหมาะกับสไตล์ของคุณ
             </p>
+            <br />
+            <a href="https://naughty-jones-e94841.netlify.app/question.html">
+            <button>
+              <img src={start_quiz}  id="start__btn"/>
+            </button>
+            </a>
           </div>
         </div>
       </div>

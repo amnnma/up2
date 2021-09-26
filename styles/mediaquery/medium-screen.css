@@ -1,5 +1,4 @@
 @media screen and (min-width: 321px) and (max-width: 768px) {
-  body,
   #q--first,
   #q--second,
   #q--final {
@@ -9,14 +8,6 @@
     padding: 0px;
     font-family: 'Jua', sans-serif;
     line-height: 1.2em;
-  }
-  a {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
   }
   .button {
     width: 100%;

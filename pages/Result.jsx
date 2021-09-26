@@ -1,4 +1,3 @@
-import Router from 'next/router'
 class Webtoon {
   constructor(title, description, synopsis, link){
       this.title = title;
@@ -9,50 +8,50 @@ class Webtoon {
 }
 
 const cartoons = {
-  "111" : new Webtoon(
-  "2B 작가의 < 퀴퀴한 일기 >",
-  "친근한 캐릭터를 좋아하는 당신! 오늘부터 보람 언냐의 “벗”이 되어보는 건 어때요? 때론 가볍고 때론 묵직한 이야기 속, 섬세한 표정과 생생한 제스처에 함께 울고 웃을 수 있을 거예요.",
-  "내 주변에 반드시 한 명은 있을 것만 같은, 어쩌면 나 같기도 한 그녀의 일기. 어느덧 40대의 아기 엄마가 된 주인공 이보람과 그의 군단들의 이야기이다. 너무나 시시하고 쩨쩨해서 누구에게 털어놓기도 멋쩍은 일들이 작은 마음을 가진 그들에겐 늘 뜨겁고 강렬하다! 마음속 깊이 숨어있는 자질구레한 감정들과 스스로 인정하고 싶지 않은 치사스러운 마음들을 뻔뻔하게 받아들일 수 있는 곳. 소소한 행복과 내밀한 이야기들을 가감 없이 나눌 수 있는 곳. 바쁜 하루 동안 미처 돌아보지 못한 내 마음 깊은 곳에 숨어있는 작은 먼지들을 툭툭 털어내어 볼 수 있는 우리의 일기장. 퀴퀴한 일기.",
+  "131" : new Webtoon(
+  "โมบายดอกไม้จากขวดพลาสติก",
+  "1 ชั่วโมง",
+  "ขวดพลาสติกใช้แล้ว (ล้างทำความสะอาดให้เรียบร้อย) กาว กระดาษทิชชู่ ฟอยล์อลูมิเนียม เชือก 1. ล้างขวดเครื่องดื่มและถอดฝาออก 2.ตัดบริเวณส่วนบนของขวาดพลาสติกให้เป็นรูปทรงดอกไม้ หรือรูปทรงต่าง ๆ 1. ทำการตกแต่งดอกไม้ด้วยการทาสี ทิ้งให้แห้ง สำหรับนำไปประกอบเป็นโมบาย 2. หุ้มบริเวณคอขวดพลาสติกด้วยเทป หรือกระดาษฟอยล์อลูมิเนียมให้แน่น",
   "https://webtoon.kakao.com/content/%ED%80%B4%ED%80%B4%ED%95%9C-%EC%9D%BC%EA%B8%B0/1295"
   ),
-  "112" : new Webtoon(
-  "홍끼 작가의 < 노곤하개 >",
-  "특별한 캐릭터를 좋아하는 당신! 개성 넘치는 강아지들의 매력 속으로 빠져보는 건 어때요? 귀여운 캐릭터 속에 가끔씩 등장하는 극 사실주의 그림체가 보는 재미를 더할 거예요.",
-  "귀여운 멍멍이들과 함께하는 노곤하지 않은 일상 이야기.",
+  "121" : new Webtoon(
+  "อิฐรักษ์โลก",
+  "30 นาที",
+  "ขยะพลาสติก ขวดพลาสติก กรรไกร ไม้ กาว 1. ล้างทำความสะอาดขวดพลาสติกและ เช็ดวัสดุพลาสติกทั้งหมดให้แห้ง เพื่อป้องกันเชื้อราภายในขวด 2. สำหรับถุงหรือขยะพลาสติก นำไปทำความสะอาดและตากให้แห้งเช่นกัน",
   "https://comic.naver.com/webtoon/list?titleId=702672"
 ),
-  "121" : new Webtoon(
-  "돌배 작가의 < 율리 >",
-  "호랑이의 모습을 한 낙타, 후천적으로 정해지는 인간의 성(性), 작가의 상상력은 끝이 없어요. 특유의 포근한 그림체가 사랑스러운 분위기를 자아내고, 다양한 인체 묘사는 감상에 재미를 더할 거예요.",
+  "132" : new Webtoon(
+  "บัวรดน้ำ",
+  "15 นาที",
   "신의 사원의 대도서관 관장인 쿠무치는 한 노예시장에서 율리라는 이름의 아이를 데려온다. 사원의 일꾼 대신 율리에게 맡겨진 임무는 이웃 나라로 함께 가서 사원의 지도자인 ‘하늘스승’의 후계자를 찾아오는 것이다. 쿠무치와 율리는 신의 사원을 나와 동쪽으로 떠나는 먼 길을 떠난다. 두 사람은 여행길에 여러 다양한 사람들을 만나고 여러 나라를 거쳐 여행한다. 그리고 그들은 드디어 찾고 있었던 ‘작은하늘스승’을 만나게 된다.",
   "https://comic.naver.com/webtoon/list?titleId=765470"
 ),
-  "122" : new Webtoon(
-  "반지 작가의 < 신비 >",
+  "311" : new Webtoon(
+  "s",
   "미지의 세계에 대한 상상을 해본 적이 있나요? 가람이와 신비의 특별한 이야기가 당신을 기다려요! 특유의 수려한 그림체가 작품을 감상하는 데 황홀함을 더할 거예요.",
   "긴 잠에서 깨어난 미지의 생명체 신비와 그녀를 사랑하게 된 가람의 사랑 이야기. ‘나의 뮤즈가 되어 줄래?’",
   "https://comic.naver.com/webtoon/list?titleId=740487"
 ),
-  "131" : new Webtoon(
-  "장이 작가의 < 경이로운 소문 >",
+  "211" : new Webtoon(
+  "sdsd",
   "진짜 영웅들이 악을 물리치는 속 시원한 이야기가 여기 있어요! 판타지 드라마에 걸맞은 화려한 연출이 보는 재미를 더할 거예요.",
   "영원불멸의 삶을 위해 지구로 내려온 사후세계 악한 영혼들. 그들을 잡는 카운터들의 이야기.",
   "https://webtoon.kakao.com/content/%EA%B2%BD%EC%9D%B4%EB%A1%9C%EC%9A%B4-%EC%86%8C%EB%AC%B8/1525"
 ),
-  "132" : new Webtoon(
-  "네온비/안나래 작가의 < 미완결 >",
+  "341" : new Webtoon(
+  "dsds",
   "특별한 캐릭터를 좋아하는 당신! 개성 뚜렷한 인물들의 자극적인 스토리가 당신을 기다려요. 사실적인 그림체에 때론 섬뜩하기도 할 거예요.",
   `“오랜 팬으로 동경해온 천재 소설 작가님이 내 애인을 강렬히 원한다!” 에디터 <원유진>, 뮤지컬 배우 <은미결>, 소설가 <선은호>. 자신의 일과 예술을 사랑하는 세 사람은 각자 결핍된 부분이 있었다. 이들은 눈앞의 상대에게서 서로가 갖지 못한 부분을 찾아내고 욕망한다. 자신의 분야에서 인정받고 싶은 욕구, 그리고 동경하는 상대에 대한 성적 긴장감과 소유욕은 제각기 다른 형태로 꿈틀거리기 시작하는데…. 괴물이 될 것인가, 예술가가 될 것인가? 아니면 어떠한 마침표도 찍지 못할 것인가? 세 사람의 관계와 커리어가 치밀하게 얽히며 터져 나오는 예술적 광기와 서스펜스!`,
   "https://webtoon.kakao.com/content/%EB%AF%B8%EC%99%84%EA%B2%B0/1882"
 ),
-  "141" : new Webtoon(
-  "수박양 작가의 < 아홉수 우리들 >",
+  "111" : new Webtoon(
+  "we3",
   "공감을 좋아하는 당신! 짠하지만 사랑스러운 “우리”들이 당신을 기다려요. 캐릭터 별 이미지 컬러가 정해져 있는데(특별 편 회차 참고), 색감의 조화를 보는 재미도 있을 거예요.",
   "연애, 직장, 시험 어느 하나 뜻대로 되지 않는 29살 봉우리, 차우리, 김우리. 제대로 걸렸다! 아. 홉. 수! 우리들의 팩트 폭행 로맨틱 코미디!",
   "https://comic.naver.com/webtoon/list?titleId=724815"
 ),
-  "142" : new Webtoon(
-  "남수 작가의 < 바른 연애 길잡이 >",
+  "111" : new Webtoon(
+  "e23",
   "예쁜 그림체를 좋아하는 당신! 달달한 그림체, 달달한 이야기 속으로 빠져보는 건 어때요? 파스텔 톤의 부드럽고 섬세한 작화가 로맨스를 더욱 빛나게 해줄 거예요.",
   "매일 다이어리에 세워 둔 계획을 지키며 바른 생활을 실천하는 정바름. 하지만 동아리 선배에게 느끼는 연애 감정만큼은 계획처럼 진행되지 않는데… 모두의 로망을 충족시켜 줄 설렘 달달 캠퍼스 로맨스!",
   "https://comic.naver.com/webtoon/list?titleId=703852"
@@ -129,61 +128,11 @@ const cartoons = {
   "밋밋한 얼굴의 대학생이 천재 메이크업 아티스트의 뮤즈?!",
   "https://comic.naver.com/webtoon/list?titleId=710754"
 )};
-const Result = () => {
-  const buttons = document.querySelectorAll("button");
-  const firstQ = document.querySelector("#q--first");
-  const secondQ = document.querySelector("#q--second");
-  const finalQ = document.querySelector("#q--final");
-  const cartoonTitle = document.querySelector("#cartoon__title");
-  const cartoonImg = document.querySelector("#cartoon__img");
-  const description = document.querySelector("#description");
-  const synopsis = document.querySelector("#synopsis");
-  const goToWatchBtn = document.querySelector("#button--watch");
-
-  let result = [];
-
-  const onClick = (e) => {
-    if (e.target.dataset.num) {
-      result.push(e.target.dataset.num);
-      localStorage.setItem("key", result);
-    }
-    if (result.length === 1) {
-      firstQ.style.display = "none";
-      secondQ.style.display = "flex";
-    } else if (result.length === 2) {
-      firstQ.style.display = "none";
-      secondQ.style.display = "none";
-      finalQ.style.display = "flex";
-    } else if (result.length === 3) {
-      Router.push(Result)
-    }
-  };
-
-  const showResult = (num) => {
-    cartoonImg.innerHTML = `<img src="imgs/${num}.png" id="result__image">`;
-    cartoonTitle.innerText = cartoons[num].title;
-    description.innerText = cartoons[num].description;
-    synopsis.innerText = cartoons[num].synopsis;
-  };
-
-  const goToWatchWebtoon = (num) => {
-    goToWatchBtn.addEventListener("click", () => {
-      location.replace(cartoons[num].link);
-    });
-  };
-
-  if (Router.push(Result)) {
-    let resultNum = localStorage.getItem("key").split(",");
-    resultNum = resultNum.reduce((pre, cur) => pre + cur);
-    showResult(resultNum);
-    goToWatchWebtoon(resultNum);
-  }
-
-  buttons.forEach((btn) => btn.addEventListener("click", onClick));
+function Result()  {
   return (
     <div>
       <header id="result__header">
-        <h2>이 웹툰 어때요?</h2>
+        <h2>이 웹툰 어때요? </h2>
     </header>
     <main id="result__main">
         <h3 id="cartoon__title"></h3>
@@ -207,4 +156,5 @@ const Result = () => {
     </div>
   );
 };
-export default Result;
+
+export default Result

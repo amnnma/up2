@@ -1,5 +1,5 @@
 import Router from "next/router";
-import Result from "./result";
+import Result from "../pages/Result";
 
 class Webtoon {
   constructor(title, description, synopsis, link) {
@@ -24,39 +24,39 @@ const cartoons = {
     "https://comic.naver.com/webtoon/list?titleId=702672"
   ),
   132: new Webtoon(
-    "บัวรดน้ำ",
-    "15 นาที",
-    "신의 사원의 대도서관 관장인 쿠무치는 한 노예시장에서 율리라는 이름의 아이를 데려온다. 사원의 일꾼 대신 율리에게 맡겨진 임무는 이웃 나라로 함께 가서 사원의 지도자인 ‘하늘스승’의 후계자를 찾아오는 것이다. 쿠무치와 율리는 신의 사원을 나와 동쪽으로 떠나는 먼 길을 떠난다. 두 사람은 여행길에 여러 다양한 사람들을 만나고 여러 나라를 거쳐 여행한다. 그리고 그들은 드디어 찾고 있었던 ‘작은하늘스승’을 만나게 된다.",
+    "เสื่อจากหลอดพลาสติก",
+    "1 ชั่วโมง",
+    "กรรไกร หลอดพลาสติกใช้แล้ว สบู่ 1. ทำความสะอาดหลอดพลาสติกโดยการแช่ในน้ำสบู่ 2. ล้างและปล่อยให้หลอดพลาสติกแห้งอย่างน้อย 30 นาที",
     "https://comic.naver.com/webtoon/list?titleId=765470"
   ),
   311: new Webtoon(
-    "반지 작가의 < 신비 >",
-    "미지의 세계에 대한 상상을 해본 적이 있나요? 가람이와 신비의 특별한 이야기가 당신을 기다려요! 특유의 수려한 그림체가 작품을 감상하는 데 황홀함을 더할 거예요.",
-    "긴 잠에서 깨어난 미지의 생명체 신비와 그녀를 사랑하게 된 가람의 사랑 이야기. ‘나의 뮤즈가 되어 줄래?’",
+    "ขวดสำหรับเพาะต้นกล้า ",
+    "15 นาที",
+    "ถ้วยโยเกิร์ต ถุงชาที่ใช้แล้ว เมล็ดพันธุ์พืช กระดาษทิชชู่ 1. ทำความสะอาดถ้วยโยเกิร์ตโดยล้างด้วยน้ำสบู่ 2. รอจนถ้วยโยเกิร์ตแห้งสนิท",
     "https://comic.naver.com/webtoon/list?titleId=740487"
   ),
   211: new Webtoon(
-    "장이 작가의 < 경이로운 소문 >",
-    "진짜 영웅들이 악을 물리치는 속 시원한 이야기가 여기 있어요! 판타지 드라마에 걸맞은 화려한 연출이 보는 재미를 더할 거예요.",
-    "영원불멸의 삶을 위해 지구로 내려온 사후세계 악한 영혼들. 그들을 잡는 카운터들의 이야기.",
+    "บัวรดน้ำ",
+    "15 นาที",
+    "ขวดพลาสติกมีฝาปิด ตะปู น้ำสบู่สำหรับทำความสะอาด  1. ทำความสะอาดขวดโดยล้างด้วยน้ำสบู่ 2.รอจนขวดแห้งสนิท",
     "https://webtoon.kakao.com/content/%EA%B2%BD%EC%9D%B4%EB%A1%9C%EC%9A%B4-%EC%86%8C%EB%AC%B8/1525"
   ),
-  341: new Webtoon(
-    "네온비/안나래 작가의 < 미완결 >",
-    "특별한 캐릭터를 좋아하는 당신! 개성 뚜렷한 인물들의 자극적인 스토리가 당신을 기다려요. 사실적인 그림체에 때론 섬뜩하기도 할 거예요.",
-    `“오랜 팬으로 동경해온 천재 소설 작가님이 내 애인을 강렬히 원한다!” 에디터 <원유진>, 뮤지컬 배우 <은미결>, 소설가 <선은호>. 자신의 일과 예술을 사랑하는 세 사람은 각자 결핍된 부분이 있었다. 이들은 눈앞의 상대에게서 서로가 갖지 못한 부분을 찾아내고 욕망한다. 자신의 분야에서 인정받고 싶은 욕구, 그리고 동경하는 상대에 대한 성적 긴장감과 소유욕은 제각기 다른 형태로 꿈틀거리기 시작하는데…. 괴물이 될 것인가, 예술가가 될 것인가? 아니면 어떠한 마침표도 찍지 못할 것인가? 세 사람의 관계와 커리어가 치밀하게 얽히며 터져 나오는 예술적 광기와 서스펜스!`,
+  221: new Webtoon(
+    "โคมไฟจากกล่องนม ",
+    "30 นาที",
+    "กรรไกรและกาว ดินสอ ปากกา หรือปากกามาร์คเกอร์ ไม้บรรทัด เชือกหรือเส้นด้าย ฟองน้ำ เข็มหรืออุปกรณ์สำหรับเจาะรูร้อยเชือก ดวงไฟ/หลอดไฟสำหรับประดับ ไม้ หรือราวแขวน สำหรับแขวนโมบาย 1. ล้างกล่องนมให้สะดวก และรอให้แห้ง 2. ทำการตัดบริเวณส่วนบนของกล่องนมออก 3. ใช้ดินสอและไม้บรรทัดตีกรอบ โดยวัดจากขอบของกล่องนมเข้ามาประมาณ 1 นิ้ว จากนั้นทำการตัดพื้นที่ตรงกลางออกเพื่อให้เป็นช่อง ทำซ้ำไปจนครบด้านข้างทั้ง 4 ด้าน 4. นำกระดาษไขมาตกแต่งด้วยลวดลายต่าง ๆ จากนั้นตัดออเป็นแผ่น ให้มีขนาดเท่ากับด้านของกล่องนม 5. นำกระดาษติดบนกล่องนมจากด้านใน ทำไปจนครบทุกด้านและรอให้กาวแห้ง 6. นำหลอดไฟสำหรับประดับใส่เข้าไปในโคมไฟ และจัดระเบียบสายให้เรียบร้อย 7. นำเชือกมาต่อที่ด้านบนของโคมไฟ เพื่อให้เป็นที่สำหรับห้อย",
     "https://webtoon.kakao.com/content/%EB%AF%B8%EC%99%84%EA%B2%B0/1882"
   ),
-  111: new Webtoon(
-    "수박양 작가의 < 아홉수 우리들 >",
-    "공감을 좋아하는 당신! 짠하지만 사랑스러운 “우리”들이 당신을 기다려요. 캐릭터 별 이미지 컬러가 정해져 있는데(특별 편 회차 참고), 색감의 조화를 보는 재미도 있을 거예요.",
-    "연애, 직장, 시험 어느 하나 뜻대로 되지 않는 29살 봉우리, 차우리, 김우리. 제대로 걸렸다! 아. 홉. 수! 우리들의 팩트 폭행 로맨틱 코미디!",
+  341: new Webtoon(
+    "กระเบื้องโมเสก จากวัสดุเหลือใช้",
+    "1-1.5 ชั่วโมง",
+    "นิตยสารเก่า แคตตาล็อก ปฏิทินหมดอายุ เศษกระดาษและกระดาษแข็ง เศษผ้า ฟอยล์ กระดาษห่ออมยิ้ม ฯลฯ กระดาษแข็งที่สามารถตัดวงกลม (เส้นผ่านศูนย์กลางประมาณ 20-30 ซ.ม.) กาว Eกรรไกร",
     "https://comic.naver.com/webtoon/list?titleId=724815"
   ),
   111: new Webtoon(
-    "남수 작가의 < 바른 연애 길잡이 >",
-    "예쁜 그림체를 좋아하는 당신! 달달한 그림체, 달달한 이야기 속으로 빠져보는 건 어때요? 파스텔 톤의 부드럽고 섬세한 작화가 로맨스를 더욱 빛나게 해줄 거예요.",
-    "매일 다이어리에 세워 둔 계획을 지키며 바른 생활을 실천하는 정바름. 하지만 동아리 선배에게 느끼는 연애 감정만큼은 계획처럼 진행되지 않는데… 모두의 로망을 충족시켜 줄 설렘 달달 캠퍼스 로맨스!",
+    "ที่คั่นหนังสือ",
+    "15 นาที",
+    "กระดาษแข็ง นิตยสารที่ไม่ใช้แล้ว กรรไกร กาว",
     "https://comic.naver.com/webtoon/list?titleId=703852"
   ),
   151: new Webtoon(
@@ -142,7 +142,6 @@ const SectionQuiz = () => {
   const description = document.querySelector("#description");
   const synopsis = document.querySelector("#synopsis");
   const goToWatchBtn = document.querySelector("#button--watch");
-
   let result = [];
 
   const onClick = (e) => {
@@ -150,15 +149,16 @@ const SectionQuiz = () => {
       result.push(e.target.dataset.num);
       localStorage.setItem("key", result);
     }
-    if (result.length === 1) {
+
+    if (result.length == 1) {
       firstQ.style.display = "none";
       secondQ.style.display = "flex";
-    } else if (result.length === 2) {
+    } else if (result.length == 2) {
       firstQ.style.display = "none";
       secondQ.style.display = "none";
       finalQ.style.display = "flex";
-    } else if (result.length === 3) {
-      location.replace("https://naughty-jones-e94841.netlify.app/result.html");
+    } else if (result.length == 3) {
+      location.replace("https://webtoon-type-test.netlify.app/result.html");
     }
   };
 
@@ -175,9 +175,7 @@ const SectionQuiz = () => {
     });
   };
 
-  if (
-    location.href === "https://naughty-jones-e94841.netlify.app/result.html"
-  ) {
+  if (location.href === "https://webtoon-type-test.netlify.app/result.html") {
     let resultNum = localStorage.getItem("key").split(",");
     resultNum = resultNum.reduce((pre, cur) => pre + cur);
     showResult(resultNum);
@@ -186,76 +184,67 @@ const SectionQuiz = () => {
 
   buttons.forEach((btn) => btn.addEventListener("click", onClick));
   return (
-    <body>
+    <div>
       <div id="q--first">
-        <header>
-          <p className="text-center">
-            ให้คุณเลือกตอบคำถามจากตัวเลือกเหล่านี้
-            <br /> ระบบจะทำการประมวลผลออกมาให้ว่าคุณสามารถทำ upcycling
-            แบบไหนได้บ้าง
-          </p>
-          <br />
-          <span className="text-5xl text-center">ประสบการณ์ upcycling</span>
+        <header className="q__header">
+          <h2>Q1. 웹툰을 고를 때 중요하게 생각하는 것이 무엇인가요?</h2>
         </header>
-        <main className="p-10">
-          <button className="button" data-num="1">
-            <h3 data-num="1">ไม่เคยทำมาก่อน</h3>
+        <main className="q__main">
+          <button className="button" data-num={1}>
+            <h3 data-num={1}>그림체</h3>
+            <p data-num={1}>그림체가 예쁘면 기분이 좋거든요~</p>
           </button>
-          <button className="button" data-num="2">
-            <h3 data-num="2">เคยทำงานประดิษฐ์มาบ้าง</h3>
-          </button>
-          <button className="button" data-num="3">
-            <h3 data-num="3">ทำเป็นประจำอยู่แล้ว</h3>
+          <button className="button" data-num={2}>
+            <h3 data-num={2}>스토리</h3>
+            <p data-num={2}>뭐니 뭐니 해도 빠져드는 이야기가 최고!</p>
           </button>
         </main>
       </div>
       <div id="q--second">
-        <header>
-          <p className="text-center">
-            ให้คุณเลือกตอบคำถามจากตัวเลือกเหล่านี้
-            <br /> ระบบจะทำการประมวลผลออกมาให้ว่าคุณสามารถทำ upcycling
-            แบบไหนได้บ้าง
-          </p>
-          <br />
-          <span className="text-5xl text-center">
-            คุณมีเวลาในการทำเท่าไหร่ ?
-          </span>
+        <header className="q__header">
+          <h2>Q2. 어떤 장르를 선호하나요?</h2>
         </header>
-        <main>
-          <button className="button" data-num="1">
-            <h3 data-num="1">15 นาที</h3>
+        <main className="q__main">
+          <button className="button" data-num={1}>
+            <h3 data-num={1}>일상/개그</h3>
+            <p data-num={1}>맘 편하게 보는 게 좋아요~</p>
           </button>
-          <button className="button" data-num="2">
-            <h3 data-num="2">30 นาที</h3>
+          <button className="button" data-num={2}>
+            <h3 data-num={2}>판타지</h3>
+            <p data-num={2}>제3의 세계 늘 새로워 짜릿해</p>
           </button>
-          <button className="button" data-num="3">
-            <h3 data-num="3">1 ชั่วโมง</h3>
+          <button className="button" data-num={3}>
+            <h3 data-num={3}>스릴러/액션/미스터리</h3>
+            <p data-num={3}>두근두근 긴장감에 설레요!</p>
           </button>
-          <button className="button" data-num="4">
-            <h3 data-num="4">1.5 - 2 ชั่วโมง</h3>
+          <button className="button" data-num={4}>
+            <h3 data-num={4}>로맨스</h3>
+            <p data-num={4}>가장 중요한 것은 사랑이어라</p>
+          </button>
+          <button className="button" data-num={5}>
+            <h3 data-num={5}>드라마</h3>
+            <p data-num={5}>점점 더 궁금해지는 스토리가 좋아요!</p>
           </button>
         </main>
       </div>
       <div id="q--final">
-        <header>
-          <p className="text-center">
-            ให้คุณเลือกตอบคำถามจากตัวเลือกเหล่านี้
-            <br /> ระบบจะทำการประมวลผลออกมาให้ว่าคุณสามารถทำ upcycling
-            แบบไหนได้บ้าง
-          </p>
-          <br />
-          <span className="text-5xl text-center">เลือกเศษวัสดุที่คุณมี </span>
+        <header className="q__header">
+          <h2>Q3. 어떤 캐릭터를 선호하나요?</h2>
         </header>
-        <main>
-          <button className="button" data-num="1">
-            <h3 data-num="1">ขวดพลาสติก</h3>
+        <main className="q__main">
+          <button className="button" data-num={1}>
+            <h3 data-num={1}>공감</h3>
+            <p data-num={1}>
+              쉽게 공감할 수 있는 캐릭터. 친근한 캐릭터에 정이 가요~
+            </p>
           </button>
-          <button className="button" data-num="2">
-            <h3 data-num="2">หลอดพลาสติก</h3>
+          <button className="button" data-num={2}>
+            <h3 data-num={2}>개성</h3>
+            <p data-num={2}>특이하거나 특별한 캐릭터가 좋아요!</p>
           </button>
         </main>
       </div>
-    </body>
+    </div>
   );
 };
 export default SectionQuiz;
