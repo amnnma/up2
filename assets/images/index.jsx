@@ -20,7 +20,7 @@ import bike from './bike.png'
 import sailcloth from "./sailcloth.png"
 import sailbag from "./sailbag.png"
 import waste from "./waste.svg"
-import wastenation from "./wastenation.svg"
+import wastenation from "./wastenation2.png"
 import introi from "./introi.png"
 import wasteimage from "./wasteimage.png"
 import wasteimage2 from "./wasteimage2.png"
