@@ -8,11 +8,12 @@ const SectionIntro = () => {
       className="bg-yellow-300 relative z-50 min-h-screen bg-fixed"
       style = {{ backgroundImage: "url('https://www.img.in.th/images/768e211a1e39b708dd705ea27afe3d07.png')"}}
     >
+      <h1 className="text-center">*ผลงานชิ้นนี้เหมาะกับการดูบนหน้าจอคอมพิวเตอร์*</h1>
       <img
         src={image.why}
         alt="Introimage"
-        className="mx-auto"
-        style={{ width: "80%", height: "90%" }}
+        className="mx-auto  lg:mx-auto md:max-h-50 hidden md:block sm:block"
+        
       />
       <div
         className="absolute flex flex-col items-center w-11/12 mx-auto text-center md:w-full"
