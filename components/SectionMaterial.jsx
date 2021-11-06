@@ -136,11 +136,11 @@ const SectionMaterial = () => {
               การ upcycling แบบไหนที่เหมาะกับสไตล์ของคุณ
             </p>
             <br />
-            <a href="https://naughty-jones-e94841.netlify.app/index.html">
+            <Link href="/index.html">
             <button>
               <img src={start_quiz}  id="start__btn"/>
             </button>
-            </a>
+            </Link>
           </div>
         </div>
       </div>
@@ -150,8 +150,8 @@ const SectionMaterial = () => {
           style={{
             background: "#4D8684",
             transform: "translate(-50%, -50%)",
-            maxWidth: "986px",
-            maxHeight: "572px",
+            maxWidth: "1200px",
+            maxHeight: "600px",
           }}
         >
           <div className="flex justify-start mt-1">
