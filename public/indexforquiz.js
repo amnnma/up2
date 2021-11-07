@@ -34,7 +34,7 @@ const showResult = (num) => {
     details.innerText = quizup[num].details;
 };
 
-const goToWatchWebtoon = (num) => {
+const goToWatch = (num) => {
     goToWatchBtn.addEventListener("click", () => {
         location.replace(quizup[num].link);
     });
@@ -44,7 +44,7 @@ if(location.href === "https://upcycling-quiz.netlify.app/result.html"){
     let resultNum = localStorage.getItem("key").split(",");
     resultNum = resultNum.reduce((pre,cur)=>pre+cur);
     showResult(resultNum);
-    goToWatchWebtoon(resultNum);
+    goToWatch(resultNum);
 }
 
 buttons.forEach((btn)=>btn.addEventListener("click", onClick));
