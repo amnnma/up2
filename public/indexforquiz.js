@@ -23,7 +23,7 @@ const onClick = (e) => {
         secondQ.style.display = "none";
         finalQ.style.display = "flex";
     } else if (result.length === 3) {
-        location.replace("https://upcycling-quiz.netlify.app/result.html");
+        location.replace("https://upcycling-culture.netlify.app/result.html");
     }
 };
 
@@ -40,7 +40,7 @@ const goToWatch = (num) => {
     });
 };
 
-if(location.href === "https://upcycling-quiz.netlify.app/result.html"){
+if(location.href === "https://upcycling-culture.netlify.app/result.html"){
     let resultNum = localStorage.getItem("key").split(",");
     resultNum = resultNum.reduce((pre,cur)=>pre+cur);
     showResult(resultNum);
