@@ -12,7 +12,7 @@ const SectionIntro = () => {
       <img
         src={image.why}
         alt="Introimage"
-        className="mx-auto  lg:mx-auto md:max-h-50 hidden md:block sm:block"
+        className="mx-auto w-9/12 lg:mx-auto md:max-h-50 hidden md:block sm:block"
         
       />
       <div

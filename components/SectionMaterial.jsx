@@ -136,7 +136,7 @@ const SectionMaterial = () => {
               การ upcycling แบบไหนที่เหมาะกับสไตล์ของคุณ
             </p>
             <br />
-            <Link href="./indexforquiz.html">
+            <Link href="/indexforquiz.html">
             <button>
               <img src={start_quiz}  id="start__btn"/>
             </button>

@@ -59,14 +59,8 @@ const SectionFooter = () => {
 
             <div className="w-4/6 leading-snug space-y-5 text-justify">
               <p>
-                pngegg.com, kaidee.com, freitag.ch,
-                greenissuessingapore.blogspot.com, earth.com, phuketimes.com,
-                thaipng.com, pinterest.com, euractiv.com, forbes.com,
-                luxiders.com, unsplash.com, istockphoto.com, sarakadee.com,
-                shopee.co.th, Kiddeeproject.Thailand, kevin-cheung.com,
-                upcyclethat.com, theupcycle.nl, Tlejourn, Pin.Metal.Art,
-                topicstock.pantip.com, thinkmakeshareblog.com, crayola.com,
-                flaticon.com
+              pngegg.com, kaidee.com, freitag.ch, greenissuessingapore.blogspot.com, earth.com, phuketimes.com, thaipng.com, pinterest.com, euractiv.com, forbes.com, luxiders.com, unsplash.com, istockphoto.com, sarakadee.com, shopee.co.th, Kiddeeproject.Thailand, kevin-cheung.com, upcyclethat.com, theupcycle.nl, Tlejourn, Pin.Metal.Art, topicstock.pantip.com, thinkmakeshareblog.com, crayola.com, flaticon.com, greenbiz.com, 
+logos-world.net, popticles.com
               </p>
             </div>
           </section>
@@ -103,7 +97,7 @@ const SectionFooter = () => {
           </div>
         </div>
       </div>
-      <img src={image.logo} alt="PU" style={{ transform: " translateX(400%)" }}/>
+      <img src={image.logo} alt="PU" className="md:object-none mx-auto object-center"/>
       <br />
     </div>
   );

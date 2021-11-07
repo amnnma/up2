@@ -13,7 +13,7 @@ const SectionCardflip = () => {
       <div className="container flex flex-col justify-around min-h-screen py-10 mx-auto text-center md:py-16 H4 text-white">
         <div className="H4 font-normal text-black ">
           <span className="H3">เอาให้ชัด Upcycling or Recycle? </span>
-          <br /> การจัดการขยะยังคงใช้สองกระบวนการหลักนั่นคือ
+          <br /> <a></a>การจัดการขยะยังคงใช้สองกระบวนการหลักนั่นคือ
           <p>
             แม้ว่าทั้งสองวิธีนี้ จะเป็นกระบวนการในจัดการกับ
             วัสดุเหลือใช้เหลือใช้เหมือนกัน แต่ทั้งสองวิธีนี้ก็มีวิธีการและ
@@ -88,7 +88,7 @@ const SectionCardflip = () => {
                 transform: " translateX(-50%)",
               }}
             />
-            <span>
+            <span className="text-white H4 mx-auto md:w-9/12 lg:w-6/12" >
             หลังจากที่เข้าใจ concept ของการ upcycling มากขึ้นแล้ว
             ลองมาดูกันดีกว่า ว่าเศษวัสดุเหลือใช้ที่เราเห็นตามที่ต่าง ๆ
             สามารถนำมา upcycling และเพิ่มมูลค่าได้มากมายทีเดียว
