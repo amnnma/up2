@@ -41,6 +41,8 @@ body,
 }
 
 #result__image {
+  width: 600px;
+  height: 400px;
   animation: appear 2s forwards;
 }
 
