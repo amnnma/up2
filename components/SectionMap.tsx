@@ -21,6 +21,8 @@ const SectionMap = () => {
               <img src={Images.europe} alt="EU" />
             </div>
             <div id="services" className="H5 font-semibold text-white">
+            <p className="H5 font-bold text-white">แล้วทำไมแบรนด์ upcycling <br/>
+ส่วนใหญ่จึงมาจากทวีปยุโรป ?</p>
               หนึ่งในสาเหตุที่ผลักดันให้สหภาพยุโรปมีการ upcycling และ recycle
               สูงกว่าในภูมิภาคอื่น เพราะมีการประกาศใช้  
               <span className="whitespace-pre-line"> </span>
@@ -39,9 +41,12 @@ const SectionMap = () => {
             </div>
             <div id="services" className="H5 font-semibold text-white">
               ประเทศไทยเอง ก็มีนโยบายเรื่องการจัดการขยะและสิ่งแวดล้อม
-              ระบุไว้ในแผนพัฒนาเศรษฐกิจและสังคมแห่งชาติฉบับที่ 9
+              ระบุไว้ใน
               <span className="test text-yellow-400">
-                แต่มีขยะเพียง 50% เท่านั้นที่ถูกนำไปบริหารจัดการ
+              แผนพัฒนาเศรษฐกิจและสังคมแห่งชาติฉบับที่ 9
+              </span><br/>แต่มีขยะเพียง
+              <span className="test text-yellow-400">
+                 50% เท่านั้นที่ถูกนำไปบริหารจัดการ
               </span>
             </div>
           </div>
