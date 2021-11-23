@@ -6,7 +6,8 @@ const upcycleTitle = document.querySelector("#up__title");
 const upcycleImg = document.querySelector("#up__img");
 const description = document.querySelector("#description");
 const details = document.querySelector("#details");
-const goToWatchBtn = document.querySelector("#button--watch");
+const prepare = document.querySelector("#prepare");
+const howto = document.querySelector("#howto");
 
 let result = [];
 
@@ -32,13 +33,11 @@ const showResult = (num) => {
     upcycleTitle.innerText = quizup[num].title;
     description.innerText = quizup[num].description;
     details.innerText = quizup[num].details;
+    prepare.innerText = quizup[num].prepare;
+    howto.innerText = quizup[num].howto;
 };
 
-const goToWatch = (num) => {
-    goToWatchBtn.addEventListener("click", () => {
-        location.replace(quizup[num].link);
-    });
-};
+
 
 if(location.href === "https://upcycling-culture.netlify.app/result.html"){
     let resultNum = localStorage.getItem("key").split(",");

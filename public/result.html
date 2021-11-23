@@ -9,20 +9,43 @@
     <script defer src="./indexforquiz.js"></script>
     <title>Result</title>
 </head>
-<body style="background-color: black; background-image: none;">
-    <header id="result__header">
-        <h2 style="color:white">ผลที่ได้ … เราแนะนำให้คุณลองทำ</h2>
-    </header>
-    <h3 id="up__title" style="color:white;"></h3>
-    <main id="result__main">
-        <div id="up__img" >
+<body style="background-color: black; background-image: none;" class="container text-center mx-auto my-3 px-4 py-2">
+
+    <section id="shareResult" class="mx-auto my-3">
+        <h5 class="my-3" style="opacity:80%; color:white"">ผลที่ได้ … เราแนะนำให้คุณลองทำ</h5>
+        <div class="resultname">
+            <p>ชื่อ</p>
         </div>
-        <span>ระยะเวลาที่ทำ</span>
-        <p id="description" style="color: white;"></p>
-        <span>อุปกรณ์</span>
-        <p id="details" style="color: white;"></p>
-    </main>
-    <footer id="result__footer">
+        <div id="up__img" class="my-3 col-lg-6 col-md-8 col-sm-10 col-12 mx-auto">
+        </div>
+
+        <div class="resultDesc my-4" style="line-height:160%">
+            <b style="color:#000;">
+                ระยะเวลาที่ทำ
+                </b>
+            <p id="description"> <br>
+            </p>
+            <b style="color:#000;">
+                <br>อุปกรณ์
+
+                </b>
+
+            <p id="details"  ><br></p>
+            <b style="color:#000;"><br>การเตรียมการ
+                
+            </b><br>
+            <p id="prepare"><br>
+            </p>
+            <b style="color:#000;"><br>วิธีทำ
+                
+                
+            </b><br>
+            <p id="howto"><br>
+
+
+            </p>
+        </div>
+
         <span>การ upcycling ของคุณ<br /><br />
             อาจช่วยให้เศษวัสดุ 1 ชิ้น<br /><br />
             ไม่ต้องจบลงที่กองขยะหรือเตาเผาได้<br /><br />
@@ -34,16 +57,13 @@
             ของการ upcycling ไปด้วยกัน
         </span>
         <br /><br />
-        <a href="https://upcycling-culture.netlify.app/indexforquiz.html">
-            <button class="button">
-                <h3>เล่นอีกครั้ง</h3>
-            </button>
-        </a>
-        <a href="https://upcycling-culture.netlify.app">
-            <button class="button">
-                <h3>กลับหน้าเว็บ</h3>
-            </button>
-        </a>
-    </footer>
+        <div class="buttons d-grid gap-2 my-4 mx-auto ">
+            <button type="button" class="gohome" onclick="location.href='https://upcycling-culture.netlify.app/indexforquiz.html' ">เล่นอีกครั้ง✨</button>
+            <button type="button" class="gohome" onclick="location.href ='https://upcycling-culture.netlify.app'">กลับหน้าเว็บ👀</button>
+        </div>
+
+
+    </section>
+    
 </body>
 </html>
