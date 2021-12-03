@@ -4,12 +4,14 @@ const SectionMap = () => {
   return (
     <div>
       <div
+      data-scroll-section
         id="title flourish"
         className="py-10 text-center"
         style={{ background: "#1331E6" }}
       >
-        <span className="w-10/12 mx-auto font-normal text-xl  H5 md:w-full text-white">
-          จากการสำรวจแบรนด์ upcycling จากทั่วโลกพบว่า แบรนด์เหล่านี้มาจากทวีป
+        <span className="w-10/12 mx-auto text-xl  H4 md:w-full text-white">
+        จากการเก็บข้อมูลแบรนด์ upcycling กว่า 60 แบรนด์ พบว่า<br />
+ แบรนด์ส่วนใหญ่มาจากทวีปยุโรปและอเมริกา
         </span>
         <Flourish />
         <div

@@ -4,7 +4,7 @@ import wastex from "../assets/images/test.svg";
 import image from "../assets/images";
 const SectionIntroblue = () => {
   return (
-    <div style={{ background: "#1331E6"}}>
+    <div   data-scroll-section style={{ background: "#1331E6"}}>
       <div className="container flex flex-col justify-around min-h-screen py-10 mx-auto text-center md:py-16">
         <div className="w-11/12 mx-auto md:w-9/12 lg:w-6/12">
           <div className="text-white H5">

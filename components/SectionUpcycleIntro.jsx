@@ -2,8 +2,8 @@ import circle from "../assets/images/circle.svg";
 import timeline from "../assets/images/timeline.png";
 const SectionUpcycleIntro = () => {
   return (
-    <div className="relative" id="wrapper">
-      <div className="relative min-h-screen" style={{ background: "#FFD43B" }}>
+
+      <div data-scroll-section className="relative min-h-screen" style={{ background: "#FFD43B" }}>
       <div
           className="absolute flex flex-col items-center w-11/12 mx-auto text-center md:w-full"
           style={{ top: "10%", left: "50%", transform: " translateX(-50%)" }}
@@ -24,8 +24,7 @@ const SectionUpcycleIntro = () => {
           <img src={circle} className="mt-10" />
         </div>
       </div>
-           <img src={timeline}  className="relative min-h-screen my-51" style={{ top: "50%", left: "50%", transform: "translateX(-50%)" }} alt="timeline"/>
-    </div>
+  
   );
 };
 

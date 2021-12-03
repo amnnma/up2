@@ -2,6 +2,7 @@ import image from "../assets/images/index";
 const SectionFooter = () => {
   return (
     <div
+      data-scroll-section
       className="relative z-50 min-h-screen"
       style={{ background: "#000000" }}
     >
@@ -59,14 +60,21 @@ const SectionFooter = () => {
 
             <div className="w-4/6 leading-snug space-y-5 text-justify">
               <p>
-              pngegg.com, kaidee.com, freitag.ch, greenissuessingapore.blogspot.com, earth.com, phuketimes.com, thaipng.com, pinterest.com, euractiv.com, forbes.com, luxiders.com, unsplash.com, istockphoto.com, sarakadee.com, shopee.co.th, Kiddeeproject.Thailand, kevin-cheung.com, upcyclethat.com, theupcycle.nl, Tlejourn, Pin.Metal.Art, topicstock.pantip.com, thinkmakeshareblog.com, crayola.com, flaticon.com, greenbiz.com, 
-logos-world.net, popticles.com
+                pngegg.com, freitag.com, thaipng.com, unsplash.com,
+                istockphoto.com, Kiddeeproject.Thailand, kevin-cheung.com,
+                upcyclethat.com, theupcycle.nl, Tlejourn,
+                thinkmakeshareblog.com, crayola.com, flaticon.com, pexels.com,
+                facebook.com/Pin.Metal.Art/posts/10156295081703711/,
+                sarakadee.com/2017/02/22/saline-to-reused/,
+                worldarchitecturenews.com,
+                onca.org.uk/2015/09/07/turn-waste-watering-can-great-tips-zero-waste-week/,
+                europeanhouses.blogspot.com/2019/10/recycle-plastic-bottle-flowers.html
               </p>
             </div>
           </section>
         </div>
-        <br/>
-        <br/>
+        <br />
+        <br />
         <p className="H4 text-white">PU internship</p>
         <div className="mt-8 grid sm:grid-cols-3 sm:gap-6 md:gap-12 xl:w-9/12 xl:mx-auto">
           <div className="mx-auto sm:ml-auto mb-7 sm:mb-0" id="image">
@@ -82,8 +90,8 @@ logos-world.net, popticles.com
             <p>
               สุชาติ นิหะ
               <br />
-              สาขาโลกคดีศึกษาและ<br/> การประกอบการเพื่อสังคม (GSSE) Intern Project
-              Coordinator
+              สาขาโลกคดีศึกษาและ
+              <br /> การประกอบการเพื่อสังคม (GSSE) Intern Project Coordinator
             </p>
           </div>
           <div id="services" className="H6 text-white">
@@ -93,11 +101,16 @@ logos-world.net, popticles.com
           </div>
           <div className="H6 text-white font-normal" id="image">
             ศักดิ์ณรงค์ สมบัติเจริญ <br />
-            สาขาวิทยาการข้อมูล<br/> Intern Front-end Developer
+            สาขาวิทยาการข้อมูล
+            <br /> Intern Front-end Developer
           </div>
         </div>
       </div>
-      <img src={image.logo} alt="PU" className="md:object-none mx-auto object-center"/>
+      <img
+        src={image.logo}
+        alt="PU"
+        className="md:object-none mx-auto object-center"
+      />
       <br />
     </div>
   );

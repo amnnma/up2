@@ -59,6 +59,7 @@ const SectionMaterial = () => {
 
   return (
     <div
+    data-scroll-section
       className="relative z-50 min-h-screen"
       style={{ background: "#000000" }}
     >
