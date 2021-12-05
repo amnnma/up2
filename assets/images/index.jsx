@@ -53,7 +53,9 @@ import pot_yellow from "./potYellow.png"
 import bellringyellow from "./bellringYellow.png"
 import back from "./back.svg"
 import logo from "./logo.png"
+import logo2 from "./ctrn.png"
 const images = {
+  logo2,
   logo,
   back,
   pot_yellow,

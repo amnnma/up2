@@ -12,10 +12,10 @@ const SectionIntroblue = () => {
             อาจมีมูลค่าเป็นศูนย์และอาจต้องลงเอยในกองขยะฝังกลบ
           </div>
         </div>
-        <div className="grid md:grid-flow-col max-w-4xl w-11/12 py-16  mx-auto">
-          <img src={image.wasteimage} alt="2" />
-          <img src={image.wasteimage2} alt="3" />
-          <img src={image.wasteimage3} alt="4" />
+        <div className="grid md:grid-flow-col mx-auto">
+          <img src={image.wasteimage} alt="2" className="object-none" />
+          <img src={image.wasteimage2} alt="3" className="object-none"/>
+          <img src={image.wasteimage3} alt="4" className="object-none"/>
         </div>
         <div>
           <img src={wastex} alt="5" />
@@ -31,21 +31,26 @@ const SectionIntroblue = () => {
             </p>
           </div>
         </div>
-        <div className="grid md:grid-flow-col max-w-4xl w-11/12 py-16 mx-auto">
-          <img src={image.upwasteimage} alt="6" />
-          <img src={image.upwasteimage2} alt="7" />
-          <img src={image.upwasteimage3} alt="8" />
+        <div className="grid md:grid-flow-col mx-auto">
+          <img src={image.upwasteimage} alt="6" className="object-none" />
+          <img src={image.upwasteimage2} alt="7" className="object-none" />
+          <img src={image.upwasteimage3} alt="8" className="object-none" />
+        </div>
+        <div>
+          <img src={wastex} alt="5" />
         </div>
       </div>
       <div className="container flex flex-col justify-around min-h-screen py-10 mx-auto text-center md:py-16">
-        <span className="text-white H5 w-11/12 mx-auto md:w-9/12 lg:w-6/12">
+        <span className="text-white H4 w-11/12 mx-auto md:w-9/12 lg:w-6/12">
           <img
             src={star}
             alt="10"
             style={{ top: "40%", left: "50%", transform: " translateX(-50%)" }}
           />
-          วันนี้เราจะพาคุณมาเปิดโลกของการ Upcycling ให้มากขึ้น แต่ก่อนอื่น
-          มาทำความเข้าใจก่อนว่ามันคืออะไร ?
+วันนี้เราจะพาคุณมาเปิดโลกแห่งการนำของเก่ามาสร้างใหม่<br />
+แต่ก่อนอื่น ไปทำความเข้าใจกันก่อนว่า<br />
+“Upcycling” แท้จริงแล้วคืออะไร ?
+
           <img
             src={star2}
             className="relative z-auto object-contain"

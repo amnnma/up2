@@ -10,9 +10,10 @@ const SectionIntro = () => {
           "url('https://www.img.in.th/images/768e211a1e39b708dd705ea27afe3d07.png')",
       }}
     >
-      <h1 className="text-center H5">
-        *ผลงานชิ้นนี้เหมาะกับการดูบนหน้าจอคอมพิวเตอร์*
-      </h1>
+      <div className="absolute z-20" style={{ top: 0, left: "35%" }}>
+        <img src={image.logo2} alt="button" />
+      </div>
+
 
       <img
         src={image.why}
