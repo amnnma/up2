@@ -13,6 +13,7 @@ const SectionMap = () => {
         จากการเก็บข้อมูลแบรนด์ upcycling กว่า 60 แบรนด์ พบว่า<br />
  แบรนด์ส่วนใหญ่มาจากทวีปยุโรปและอเมริกา
         </span>
+      <p className="text-white">(คลิกเพื่ออ่านรายละเอียด)</p>
         <Flourish />
         <div
           className="container flex flex-col justify-around min-h-screen py-10 mx-auto text-center md:py-16 "

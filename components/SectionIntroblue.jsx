@@ -9,7 +9,7 @@ const SectionIntroblue = () => {
         <div className="w-11/12 mx-auto md:w-9/12 lg:w-6/12">
           <div className="text-white H5">
             <p>สิ่งของเหลือใช้เหล่านี้</p>
-            อาจมีมูลค่าเป็นศูนย์และอาจต้องลงเอยในกองขยะฝังกลบ
+            อาจดูไร้มูลค่าเป็นศูนย์และจะต้องลงเอยในหลุมขยะฝังกลบ
           </div>
         </div>
         <div className="grid md:grid-flow-col mx-auto">
@@ -25,7 +25,7 @@ const SectionIntroblue = () => {
         <div className="w-11/12 mx-auto md:w-9/12 lg:w-6/12">
           <div className="text-white H5">
             <p>
-              แต่เชื่อหรือไม่ว่า สิ่งของเหลือใช้ที่คนไม่ต้องการ
+              แต่เชื่อหรือไม่ว่า สิ่งของเหลือใช้ที่คนไม่ต้องการ<br/>
               สามารถนำมาเพิ่มมูลค่าและต่อยอดด้วยการ upcycling<br/>
               ทำให้สิ่งที่คนมองว่า “<b>ขยะ</b>” ไม่ได้เป็น “<b>ขยะ</b>” อีกต่อไป
             </p>
