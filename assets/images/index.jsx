@@ -54,7 +54,11 @@ import bellringyellow from "./bellringYellow.png"
 import back from "./back.svg"
 import logo from "./logo.png"
 import logo2 from "./ctrn.png"
+import logo3 from "./ctn03.png"
+import intern from "./intern.png"
 const images = {
+  intern,
+  logo3,
   logo2,
   logo,
   back,
