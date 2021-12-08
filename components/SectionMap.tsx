@@ -2,9 +2,8 @@ import { Flourish } from "./util/Flourish";
 import Images from "../assets/images/index";
 const SectionMap = () => {
   return (
-    <div>
+    <div data-scroll-section>
       <div
-      data-scroll-section
         id="title flourish"
         className="py-10 text-center"
         style={{ background: "#1331E6" }}
@@ -14,7 +13,7 @@ const SectionMap = () => {
  แบรนด์ส่วนใหญ่มาจากทวีปยุโรปและอเมริกา
         </span>
       <p className="text-white">(คลิกเพื่ออ่านรายละเอียด)</p>
-        <Flourish />
+        <Flourish data-scroll-section/>
         <div
           className="container flex flex-col justify-around min-h-screen py-10 mx-auto text-center md:py-16 "
           style={{ background: "#1331E6" }}
