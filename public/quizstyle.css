@@ -40,6 +40,13 @@ body,
   }
 }
 
+img {
+  width: 471px;
+  height: 52px;
+  left: 405px;
+  top: 300px;
+  padding-top: 150px;
+}
 #result__image {
   width: 600px;
   height: 400px;
