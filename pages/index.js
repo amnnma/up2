@@ -14,17 +14,16 @@ import SectionWaste9 from "../components/SectionWaste9";
 import SectionUpcycleIntro from "../components/SectionUpcycleIntro";
 
 import SectionMaterial from "../components/SectionMaterial";
-import SectionMaterial2 from "../components/SectionMaterial2";
+
 import SectionCardflip from "../components/SectionCardflip";
 import SectionCardflip2 from "../components/SectionCardflip2";
 import SectionFooter from "../components/SectionFooter";
 import SectionFooter2    from "../components/SectionFooter2";
-import Header from "./Header";
+
 import Sixth from "../components/Sixth";
 export default function Home() {
   return (
             <>
-              <Header />
               <SectionIntro/>
               <SectionIntroblue/>
               <SectionUpcycleIntro />
@@ -42,7 +41,6 @@ export default function Home() {
               <SectionCardflip />
               <SectionCardflip2 />
               <SectionMaterial />
-              <SectionMaterial2 />
               <SectionQuiz />
               <SectionFooter />
               <SectionFooter2 />

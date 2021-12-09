@@ -1,5 +1,5 @@
 import image from "assets/images/index";
-
+import pulogo from "../assets/images/pulogo.png"
 const SectionIntro = () => {
   return (
     <div
@@ -10,6 +10,7 @@ const SectionIntro = () => {
           "url('https://www.img.in.th/images/768e211a1e39b708dd705ea27afe3d07.png')",
       }}
     >
+      <img src={pulogo} alt="header logo" />
       <div className="absolute z-20" style={{ top: 0, left: "35%" }}>
         <img src={image.logo2} alt="button" />
       </div>
