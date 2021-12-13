@@ -15,8 +15,8 @@ const SectionMap = () => {
           แบรนด์ส่วนใหญ่มาจากทวีปยุโรปและอเมริกา
         </span>
         <p className="text-white">(คลิกเพื่ออ่านรายละเอียด)</p>
-        <div className="absolute z-20 py-20">
-          <img src={textmap} alt="text" />
+        <div className="absolute z-20 py-20" >
+          <img src={textmap} alt="text"  />
         </div>
         <Flourish />
         <div

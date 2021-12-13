@@ -61,14 +61,14 @@ const SectionFooter = () => {
             <div className="w-4/6 leading-snug space-y-4 text-justify">
               <p>
                 pngegg.com, freitag.com, thaipng.com, unsplash.com,
-                istockphoto.com,<br /> Kiddeeproject.Thailand, kevin-cheung.com,
-                upcyclethat.com, theupcycle.nl,<br /> Tlejourn,
+                istockphoto.com, <br />Kiddeeproject.Thailand, kevin-cheung.com,
+                upcyclethat.com, theupcycle.nl, <br />Tlejourn,
                 thinkmakeshareblog.com, crayola.com, flaticon.com, pexels.com,<br />
                 facebook.com/Pin.Metal.Art,
                 sarakadee.com,
-                worldarchitecturenews.com,<br />
-                onca.org.uk/2015/09/07/turn-waste-watering-can-great-tips-zero-waste-week/,
-                europeanhouses.blogspot.com/2019/10/recycle-plastic-bottle-flowers.html
+                worldarchitecturenews.com,
+                onca.org.uk,
+                europeanhouses.blogspot.com
               </p>
             </div>
           </section>
