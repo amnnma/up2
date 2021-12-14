@@ -1,6 +1,7 @@
 import { Flourish } from "./util/Flourish";
 import Images from "../assets/images/index";
 import textmap from "../assets/images/textmap.png";
+import images from "../assets/images/index";
 const SectionMap = () => {
   return (
     <div data-scroll-section>
@@ -15,10 +16,10 @@ const SectionMap = () => {
           แบรนด์ส่วนใหญ่มาจากทวีปยุโรปและอเมริกา
         </span>
         <p className="text-white">(คลิกเพื่ออ่านรายละเอียด)</p>
-        <div className="absolute z-20 py-20" >
-          <img src={textmap} alt="text"  />
+        <div className="relative justify-end min-h-screen py-10 mx-auto text-center md:py-16">
+          <img src={textmap} alt="text" className="absolute top-80 right-40" />
+          <Flourish />
         </div>
-        <Flourish />
         <div
           className="container flex flex-col justify-around min-h-screen py-10 mx-auto text-center md:py-16 "
           style={{ background: "#1331E6" }}
